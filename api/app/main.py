@@ -28,6 +28,8 @@ def metadata_api(
         name: str = None, 
         db_type: str = None, 
         release: Union[int, str] = None,
+        offset: int = 0,
+        limit: int = 20,
         Session = Depends(get_db)
     ):
 
@@ -54,6 +56,6 @@ def metadata_api(
 
 
     ## Service request
-    results = get_metadata(Session, name, db_type, release)               
+    results = get_metadata(Session, name, db_type, release, offset, limit)               
 
     return results

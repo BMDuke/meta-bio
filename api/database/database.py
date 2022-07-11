@@ -25,7 +25,3 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 # Create a base ORM class to inherit from
 Base = declarative_base()
-
-## !! Delete these statements when finished
-if __name__ == "__main__":
-    print(SQLALCHEMY_DATABASE_URL)

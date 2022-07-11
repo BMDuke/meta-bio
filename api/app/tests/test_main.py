@@ -3,6 +3,11 @@ from fastapi.testclient import TestClient
 from app.main import app
 
 '''
+This file contains the tests which we will run against our API
+to ensure that the business logic works as intended.
+
+This does not include unittests to test the correctness of the 
+code base at the function level. 
 '''
 
 # Instantiate the test client
@@ -33,6 +38,17 @@ def test_unknown_organism():
     assert res_human.status_code == 404
     assert res_homo_sapiens.status_code == 200
 
+# Test error handling of unknown db_type
+def test_unknown_db_type():
+    '''
+    '''
+    
+    res_bad_db_type = client.get('/databases?db_type=unknown')
+    res_good_db_type = client.get('/databases?db_type=cdna&name=homo%20sapiens')
+
+    assert res_bad_db_type.json() == []
+    assert len(res_good_db_type.json()) > 0
+
 # Test error is thrown if no query parameters are provided
 def test_no_parameters():
     '''
@@ -48,14 +64,18 @@ def test_short_organism_name():
     '''
 
     res_short_name = client.get('/databases?name=a')
+    res_long_name = client.get('/databases?name=homo%20sapiens')
 
     assert res_short_name.status_code == 400
+    assert res_long_name.status_code == 200
 
 # Test type checking on resource parameter
 def test_resource_type_check():
     '''
     '''
 
-    res_resource = client.get('/databases?release=ninetyone')
+    res_resource_str = client.get('/databases?release=ninetyone')
+    res_resource_int = client.get('/databases?release=91')
 
-    assert res_resource.status_code == 400    
+    assert res_resource_str.status_code == 400    
+    assert res_resource_int.status_code == 200    
