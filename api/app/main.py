@@ -1,17 +1,35 @@
+from typing import Union
+
 from fastapi import FastAPI, Depends, HTTPException
 
 from app.dependencies import get_db
+from app.middleware import BlockAllHttpMethodsExceptGet
 
 from database.crud import get_metadata, check_organism_exists_in_db
 from database.schemas import MetaDataResponseList
 
+'''
+This file defines the routes that are served by our application.
+
+It is also where we include any middlewares we would like to use.
+'''
+
+# Initialise app
 app = FastAPI()
 
+# Add custom middlewares
+app.add_middleware(
+    BlockAllHttpMethodsExceptGet
+)
+
+## API Routes
 @app.get('/databases', response_model=MetaDataResponseList)
 def metadata_api(
         name: str = None, 
         db_type: str = None, 
-        release: int = None, 
+        release: Union[int, str] = None,
+        offset: int = 0,
+        limit: int = 20,
         Session = Depends(get_db)
     ):
 
@@ -38,6 +56,6 @@ def metadata_api(
 
 
     ## Service request
-    results = get_metadata(Session, name, db_type, release)               
+    results = get_metadata(Session, name, db_type, release, offset, limit)               
 
     return results

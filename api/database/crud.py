@@ -1,12 +1,10 @@
-from typing import List
-
 from sqlalchemy import select, or_
 from sqlalchemy.orm import Session, Query
 from sqlalchemy.sql import exists
 from sqlalchemy.sql.expression import Select
 
 from database.models import DataRelease, Genome, GenomeDatabase, Organism
-from database.schemas import MetaDataResponse, MetaDataResponseList
+from database.schemas import MetaDataResponseList
 
 
 '''
@@ -19,10 +17,15 @@ def get_metadata(
     db: Session,
     organism: str = None, 
     db_type: str = None, 
-    release: int = None
+    release: int = None,
+    offset: int = 0,
+    limit: int = 20,
         ) -> MetaDataResponseList:
 
     '''
+    Takes SQLAlchemy session and values from query parameters as inputs.
+    It builds the query, queries tha database and returns the results to the 
+    user.
     '''
 
     # Create subquery by joining the data_release and organism tables 
@@ -39,7 +42,7 @@ def get_metadata(
         query = filter_query_on_dbtype(query, db_type)
 
     # Submit DB transation
-    results = db.query(query.subquery()).limit(20)
+    results = db.query(query.subquery()).offset(offset).limit(limit)
     
     # Return results
     return [r._asdict() for r in results]
@@ -53,6 +56,8 @@ def get_genome_subq(
         ) -> Select:
 
     '''
+    Builds the subquery that joins the data_release and organism
+    tables to the genome table, with optional filtering.
     '''
 
     # Join Data Release table onto Genome table 
@@ -78,6 +83,7 @@ def get_genome_subq(
 
 def join_data_release_genome_on_release_id() -> Select:
     '''
+    Joins the data_release table to the genome table
     '''
 
     subq = select(
@@ -98,6 +104,7 @@ def join_data_release_genome_on_release_id() -> Select:
 
 def filter_subq_on_release(subq: Select, release: int) -> Select:
     '''
+    Filter the genome:data_release table for release version
     '''
 
     subq = subq.where(
@@ -110,6 +117,7 @@ def filter_subq_on_release(subq: Select, release: int) -> Select:
 
 def join_organism_subq_on_organism_id(subq: Select) -> Select:
     '''
+    Joins the organism table to the genome table
     '''
 
     subq = subq.join(
@@ -123,6 +131,7 @@ def join_organism_subq_on_organism_id(subq: Select) -> Select:
 
 def filter_subq_on_organism(subq: Select, organism: str) -> Select:
     '''
+    Filter the genome:data_release:organism table for organism name
     '''    
 
     subq = subq.where(
@@ -140,6 +149,7 @@ def filter_subq_on_organism(subq: Select, organism: str) -> Select:
 
 def join_genome_subq_genome_database_in_full(subq: Query) -> Select:
     '''
+    Joins the results of the genome subquery with the genome_dataset table
     '''
     
     query = select (
@@ -161,6 +171,7 @@ def join_genome_subq_genome_database_in_full(subq: Query) -> Select:
 
 def filter_query_on_dbtype(query: Select, dbtype: str) -> Select: 
     '''
+    Filter the subquery:genome_dataset on db_type
     '''
 
     query = query.where(
@@ -173,6 +184,8 @@ def filter_query_on_dbtype(query: Select, dbtype: str) -> Select:
 
 def check_organism_exists_in_db(db: Session, organism: str) -> bool:
     '''
+    Takes a SQLAlchemy session and an organism name and checks to see whether
+    it is present in the Organism table. Returns a boolean value.
     '''
 
     does_exist = db.query(
