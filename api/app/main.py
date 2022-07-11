@@ -1,11 +1,21 @@
 from fastapi import FastAPI, Depends, HTTPException
 
 from app.dependencies import get_db
+from app.middleware import BlockAllHttpMethodsExceptGet
 
 from database.crud import get_metadata, check_organism_exists_in_db
 from database.schemas import MetaDataResponseList
 
+'''
+This file defines the routes that are served by our application.
+'''
+
 app = FastAPI()
+
+
+app.add_middleware(
+    BlockAllHttpMethodsExceptGet
+)
 
 @app.get('/databases', response_model=MetaDataResponseList)
 def metadata_api(
@@ -41,3 +51,12 @@ def metadata_api(
     results = get_metadata(Session, name, db_type, release)               
 
     return results
+
+@app.post('/databases', response_model=MetaDataResponseList)
+def metadata_api(
+        name: str = None, 
+        db_type: str = None, 
+        release: int = None, 
+        Session = Depends(get_db)
+    ):
+    return {'data':'success'}
