@@ -1,0 +1,30 @@
+Started by user [8mha:////4NPwK9zgZ/FZ5PfPit/myNlCy/LERDbc0ZoRqrYmfv1kAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYR/dLi1CL91KTcHN3MvJLUorLM1HIAZJoGaskAAAA=[0mStephen Duke
+Lightweight checkout support not available, falling back to full checkout.
+Checking out git https://github.com/BMDuke/meta-bio.git/ into /var/jenkins_home/workspace/EBML-Metadata-API@script/728425b7c382b10340efbede3d559c20634bd287fce666bc6301d10bc1bad551 to read ci_cd/Jenkinsfile
+The recommended git tool is: NONE
+using credential Github-EMBL-Interview-SSH
+Cloning the remote Git repository
+Cloning repository https://github.com/BMDuke/meta-bio.git/
+ > git init /var/jenkins_home/workspace/EBML-Metadata-API@script/728425b7c382b10340efbede3d559c20634bd287fce666bc6301d10bc1bad551 # timeout=10
+Fetching upstream changes from https://github.com/BMDuke/meta-bio.git/
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_SSH to set credentials SSH private key for EMBL Metadata project for EMBL interview
+ > git fetch --tags --force --progress -- https://github.com/BMDuke/meta-bio.git/ +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/BMDuke/meta-bio.git/ # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+Seen branch in repository origin/create_api
+Seen branch in repository origin/jenkins_config
+Seen branch in repository origin/main
+Seen 3 remote branches
+ > git show-ref --tags -d # timeout=10
+Multiple candidate revisions
+Checking out Revision 77508ca8170a40640c8e14ec45fd7a807ef30e9e (origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 77508ca8170a40640c8e14ec45fd7a807ef30e9e # timeout=10
+Commit message: "Merge pull request #2 from BMDuke/create_api"
+First time build. Skipping changelog.
+[8mha:////4C0+H206qsnElhheTDp5YHYI+0D+iOiHM4ymzuLAVNr9AAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4Ac4Ihtjtqwqv0p4Le1d5RAEZ72qj6n90fUmzkLlM+k6AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbaGmsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzDEWYIfa/QdLdtVavAAAAA==[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

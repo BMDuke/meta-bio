@@ -5,13 +5,17 @@
   <fileName>Credential id=Github-EMBL-Interview-SSH name=EMBL-Interview (SSH private key for EMBL Metadata project for EMBL interview)</fileName>
   <usages>
     <entry>
+      <string>EBML-Metadata-API</string>
+      <ranges>6</ranges>
+    </entry>
+    <entry>
       <string>test-job</string>
       <ranges>1-10</ranges>
     </entry>
   </usages>
   <facets>
     <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@1139.veb_9579fca_33b_">
-      <timestamp>1657626824957</timestamp>
+      <timestamp>1657629194089</timestamp>
       <itemFullName>EBML-Metadata-API</itemFullName>
       <timestamp0>1657626824957</timestamp0>
     </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>

@@ -4,9 +4,13 @@ pipeline {
     stages {
         stage('Build') {
 
-            def metadata_api_image = docker.build("metadata_api", "../api")
+            
 
             steps {
+
+                script {
+                    def metadata_api_image = docker.build("metadata_api", "../api")
+                }
                 echo 'Building..'
             }
         }
