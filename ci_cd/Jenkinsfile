@@ -7,17 +7,17 @@ node {
 
 
     stage 'Test'
-    
-    
-//     sh 'mkdir results'
-    metadata_api_image.run('-v ${JENKINS_HOME}/results:api/results', 'shell pytest -v --junitxml=results/results.xml')
 
-    // metadata_api_image.inside {
+    // mkdir ./results
+    // metadata_api_image.run('-v results:results', 'shell pytest -v --junitxml=results/results.xml')
 
-    //     shell 'mkdir junit'
-    //     shell 'pytest'
+    metadata_api_image.inside {
 
-    // }
+        shell 'mkdir junit'
+        shell 'pytest -v --junitxml=results.xml'
+        shell 'cat results.xml'
+
+    }
 
 
     stage 'Deploy'
