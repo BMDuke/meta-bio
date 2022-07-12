@@ -1,28 +1,12 @@
-pipeline {
-    agent any
+node {
 
-    stages {
-        stage('Build') {
+    checkout scm
 
-            
+    stage('Build') {
 
-            steps {
+        def metadata_api_image = docker.build("metadata_api", "../api")
+        sh 'echo "Building image"'
 
-                script {
-                    def metadata_api_image = docker.build("metadata_api", "../api")
-                }
-                echo 'Building..'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
     }
+
 }
