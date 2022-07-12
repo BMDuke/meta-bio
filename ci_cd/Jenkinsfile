@@ -9,7 +9,7 @@ node {
     stage 'Test'
 
     sh 'mkdir results'
-    metadata_api_image.run('-v results:results', 'shell pytest -v --junitxml=results/results.xml')
+    metadata_api_image.run('-v ./results:./results', 'shell pytest -v --junitxml=results/results.xml')
 
     // metadata_api_image.inside {
 
