@@ -10,7 +10,7 @@ node {
 
     metadata_api_image.inside {
 
-        bash 'pytest'
+        shell 'pytest'
 
     }
 
