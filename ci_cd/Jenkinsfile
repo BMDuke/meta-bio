@@ -1,3 +1,4 @@
+
 node {
 
     checkout scm
@@ -7,24 +8,26 @@ node {
         sh 'echo "Building image"'
         def metadata_api_image = docker.build("metadata_api", "./api")
 
+    
+
+        stage('Test') {
+
+            sh 'echo "Testing image"'
+            metadata_api_image.inside {
+
+                bash 'pytest'
+
+            }
+
+        }    
+
+        stage('Deploy') {
+
+            sh 'echo "Deploying image"'
+            metadata_api_image
+
+        }        
+    
     }
-
-    stage('Test') {
-
-        sh 'echo "Testing image"'
-        metadata_api_image.inside {
-
-            bash 'pytest'
-            
-        }
-
-    }    
-
-    stage('Deploy') {
-
-        sh 'echo "Deploying image"'
-        metadata_api_image
-
-    }        
 
 }
