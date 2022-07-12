@@ -2,20 +2,24 @@ node {
 
     checkout scm
 
-    stage 'Building image...'
+    stage 'Build'
     def metadata_api_image = docker.build("metadata_api", "./api")
 
 
-    stage 'Test image...'
+    stage 'Test'
 
-    metadata_api_image.inside {
+    mkdir ./results
+    metadata_api_image.run('-v results:results', 'shell pytest -v --junitxml=results/results.xml')
 
-        shell 'pytest'
+    // metadata_api_image.inside {
 
-    }
+    //     shell 'mkdir junit'
+    //     shell 'pytest'
+
+    // }
 
 
-    stage 'Deploy image...'
+    stage 'Deploy'
 
     
 
