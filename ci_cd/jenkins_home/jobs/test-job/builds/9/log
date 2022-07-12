@@ -1,0 +1,24 @@
+Started by user [8mha:////4NPwK9zgZ/FZ5PfPit/myNlCy/LERDbc0ZoRqrYmfv1kAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYR/dLi1CL91KTcHN3MvJLUorLM1HIAZJoGaskAAAA=[0mStephen Duke
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/test-job
+The recommended git tool is: NONE
+using credential Github-EMBL-Interview-SSH
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/test-job/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:BMDuke/meta-bio.git # timeout=10
+Fetching upstream changes from git@github.com:BMDuke/meta-bio.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_SSH to set credentials SSH private key for EMBL Metadata project for EMBL interview
+ > git fetch --tags --force --progress -- git@github.com:BMDuke/meta-bio.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 77508ca8170a40640c8e14ec45fd7a807ef30e9e (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 77508ca8170a40640c8e14ec45fd7a807ef30e9e # timeout=10
+Commit message: "Merge pull request #2 from BMDuke/create_api"
+First time build. Skipping changelog.
+[test-job] $ /bin/sh -xe /tmp/jenkins16734513218977446517.sh
++ sudo docker build ./api
+/tmp/jenkins16734513218977446517.sh: 2: sudo: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

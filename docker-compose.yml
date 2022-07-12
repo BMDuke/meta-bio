@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+
+  metadata-api:
+    build: ./api
+    ports:
+      - "4000:80"
+
+  jenkins-server:
+    build: ./ci_cd
+    ports: 
+      - "4100:8080"
+      - "4101:5000"
+    volumes:
+      - "./ci_cd/jenkins_home:/var/jenkins_home"
