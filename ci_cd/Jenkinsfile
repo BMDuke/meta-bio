@@ -13,7 +13,7 @@ node {
 
     metadata_api_image.inside {
 
-        shell 'mkdir junit'
+        sh 'mkdir junit'
         shell 'pytest -v --junitxml=results.xml'
         shell 'cat results.xml'
 
