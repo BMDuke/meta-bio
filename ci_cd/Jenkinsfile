@@ -11,12 +11,20 @@ node {
     // mkdir ./results
     // metadata_api_image.run('-v results:results', 'shell pytest -v --junitxml=results/results.xml')
 
-    metadata_api_image.inside {
+    // metadata_api_image.inside {
 
-        sh 'pytest -v --junitxml=results.xml'
-        sh 'cat results.xml'
+    //     sh 'mkdir junit'
+    //     shell 'pytest -v --junitxml=results.xml'
+    //     shell 'cat results.xml'
 
-    }
+    // }
+
+    metadata_api_image.withRun('-p 8081:80') { c ->
+
+        shell 'pytest -v --junitxml=results.xml'
+        shell 'cat results.xml'
+
+    }    
 
 
     stage 'Deploy'
