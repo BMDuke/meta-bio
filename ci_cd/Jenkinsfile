@@ -8,7 +8,7 @@ node {
 
     stage 'Test'
 
-    metadata_api_image.withRun('-v ${JENKINS_HOME}/results:/api/results -p 8081:80') { c ->
+    metadata_api_image.inside('-v ${JENKINS_HOME}/results:/api/results -p 8081:80') { c ->
 
         sh 'pytest -v --junitxml=results/results.xml'
 
