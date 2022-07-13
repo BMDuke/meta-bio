@@ -4,13 +4,28 @@ services:
 
   metadata-api:
     build: ./api
+    container_name: metadata_api
     ports:
       - "4000:80"
+    restart: unless-stopped
+
 
   jenkins-server:
     build: ./ci_cd
+    container_name: jenkins
     ports: 
       - "4100:8080"
       - "4101:5000"
     volumes:
       - "./ci_cd/jenkins_home:/var/jenkins_home"
+    restart: unless-stopped
+    environment:
+     - JENKINS_OPTS="--prefix=/jenkins"
+
+  nginx-server:
+    build: ./reverse_proxy
+    container_name: nginx
+    ports:
+      - "80:80"
+    # network_mode: host
+    restart: unless-stopped
