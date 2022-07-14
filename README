@@ -1,0 +1,3 @@
+Connecting docker to on host machine to docker in jenkins requires bind mounting the docker runtime to that on the jenkins container.
+For this to work you may need to grant permissions for this on the host machine by runinning 
+sudo chmod 666 /var/run/docker.sock
