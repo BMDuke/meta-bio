@@ -1,8 +1,8 @@
 
 The following files have been resolved:
-   org.jenkins-ci.main:cli:jar:2.346.1:compile
+   org.jenkins-ci.main:cli:jar:2.346.2:compile
    org.jenkins-ci.main:remoting:jar:4.13.2:compile
-   org.jenkins-ci.main:jenkins-core:jar:2.346.1:compile
+   org.jenkins-ci.main:jenkins-core:jar:2.346.2:compile
    antlr:antlr:jar:2.7.7:compile
    args4j:args4j:jar:2.33:compile
    com.github.spotbugs:spotbugs-annotations:jar:4.6.0:compile

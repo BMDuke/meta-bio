@@ -24,10 +24,10 @@ services:
     environment:
      - JENKINS_OPTS="--prefix=/jenkins"
 
-  # nginx-server:
-  #   build: ./reverse_proxy
-  #   container_name: nginx
-  #   ports:
-  #     - "80:80"
-  #   # network_mode: host
-  #   restart: unless-stopped
+  nginx-server:
+    build: ./reverse_proxy
+    container_name: nginx
+    ports:
+      - "80:80"
+    # network_mode: host
+    restart: unless-stopped
