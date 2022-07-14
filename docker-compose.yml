@@ -18,14 +18,15 @@ services:
       - "4101:5000"
     volumes:
       - "./ci_cd/jenkins_home:/var/jenkins_home"
+      - "/var/run/docker.sock:/var/run/docker.sock"
     restart: unless-stopped
     environment:
      - JENKINS_OPTS="--prefix=/jenkins"
 
-  nginx-server:
-    build: ./reverse_proxy
-    container_name: nginx
-    ports:
-      - "80:80"
-    # network_mode: host
-    restart: unless-stopped
+  # nginx-server:
+  #   build: ./reverse_proxy
+  #   container_name: nginx
+  #   ports:
+  #     - "80:80"
+  #   # network_mode: host
+  #   restart: unless-stopped

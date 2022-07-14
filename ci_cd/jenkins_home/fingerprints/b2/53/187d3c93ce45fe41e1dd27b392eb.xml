@@ -6,18 +6,14 @@
   <usages>
     <entry>
       <string>EBML-Metadata-API</string>
-      <ranges>6</ranges>
-    </entry>
-    <entry>
-      <string>test-job</string>
-      <ranges>1-10</ranges>
+      <ranges>6,39-44</ranges>
     </entry>
   </usages>
   <facets>
     <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@1139.veb_9579fca_33b_">
-      <timestamp>1657629194089</timestamp>
+      <timestamp>1657788599104</timestamp>
       <itemFullName>EBML-Metadata-API</itemFullName>
-      <timestamp0>1657626824957</timestamp0>
+      <timestamp0>1657788365551</timestamp0>
     </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
   </facets>
 </fingerprint>

@@ -1,9 +1,0 @@
-commit f1b843c850c28efa9065c190075f35d15b7d4afa
-tree 3bfa1a8968f65b0e226e3bfefd53a8b8ac12b2ca
-parent bc5c14e9639e0d0ff1f00a2fe346385798327ef6
-author Stephen Duke <hi@stephenduke.co.uk> 2022-07-12 17:29:30 +0100
-committer GitHub <noreply@github.com> 2022-07-12 17:29:30 +0100
-
-    Update Jenkinsfile
-
-:100644 100644 3e83c4b87a8543de59f1892d277a529eb1f88468 8a66e98f725f9e0aa446b77e35c3856818cd06d3 M	ci_cd/Jenkinsfile
