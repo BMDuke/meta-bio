@@ -8,6 +8,8 @@ services:
     ports:
       - "4000:80"
     restart: unless-stopped
+    logging:
+      driver: "fluentd"    
 
 
   jenkins-server:
@@ -23,11 +25,29 @@ services:
     restart: unless-stopped
     environment:
      - JENKINS_OPTS="--prefix=/jenkins"
+    logging:
+      driver: "fluentd"     
 
   nginx-server:
     build: ./reverse_proxy
     container_name: nginx
     ports:
       - "80:80"
-    # network_mode: host
+    restart: unless-stopped  
+    logging:
+      driver: "fluentd"     
+
+  # fluentbit-logger:
+  #   build: ./logging/fluentbit
+  #   container_name: fluentbit
+
+  fluentd-logger:
+    build: ./logging/fluentd
+    container_name: fluentd
+    ports:
+      - "24224:24224"
+    volumes:
+      - ./logging/fluentd/fluentd.conf:/fluentd/etc/fluentd.conf
+    environment:
+      - FLUENTD_CONF=fluentd.conf
     restart: unless-stopped
