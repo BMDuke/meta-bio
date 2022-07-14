@@ -14,9 +14,9 @@ node {
 
 //     }    
     
-    sh 'docker run metadata_api_image pytest'
+//     sh 'docker run metadata_api_image pytest'
     
-    sh 'cat results/results.xml'
+//     sh 'cat results/results.xml'
 
     stage 'Deploy'
 
