@@ -37,9 +37,16 @@ services:
     logging:
       driver: "fluentd"     
 
-  # fluentbit-logger:
-  #   build: ./logging/fluentbit
-  #   container_name: fluentbit
+  fluentbit-logger:
+    build: ./logging/fluentbit
+    container_name: fluentbit
+    ports:
+      - "24225:24225"
+    env_file:
+      - .env      
+    restart: unless-stopped  
+    depends_on:
+      - postgres-log-db
 
   fluentd-logger:
     build: ./logging/fluentd
@@ -50,4 +57,15 @@ services:
       - ./logging/fluentd/fluentd.conf:/fluentd/etc/fluentd.conf
     environment:
       - FLUENTD_CONF=fluentd.conf
+    restart: unless-stopped
+
+  postgres-log-db:
+    build: ./logging/postgresql
+    container_name: postgres
+    volumes:
+      - "./logging/postgresql/pg_data:/var/lib/postgresql/data"
+    ports:
+      - "4200:5432"
+    env_file:
+      - .env
     restart: unless-stopped

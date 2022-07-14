@@ -9,3 +9,6 @@ __pycache__
 ci_cd/jenkins-keys
 ci_cd/jenkins-keys.pub
 ci_cd/jenkins_home/caches
+
+## Logging
+logging/postgresql/pg_data
