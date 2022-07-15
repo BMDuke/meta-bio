@@ -69,3 +69,17 @@ services:
     env_file:
       - .env
     restart: unless-stopped
+
+  grafana-log-viz:
+    build: ./logging/grafana
+    container_name: grafana
+    volumes:
+      - "./logging/grafana/gf_data:/var/lib/grafana"    
+      # - "./logging/grafana/gf_conf:/etc/grafana"    
+    ports:
+      - "4300:3000"    
+    restart: unless-stopped
+    depends_on:
+      - postgres-log-db    
+    logging:
+      driver: "fluentd"        
