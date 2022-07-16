@@ -1,0 +1,129 @@
+commit 012dc9bfe0fcdddd21c16c7c692c6284990bb898
+tree 529c06b0ce7b5b81d7551fc68472fc32f266260a
+parent 81a96b8e49be393665e8fd4c456cb9cfd5d387c3
+author BMDuke <hi@stephenduke.co.uk> 2022-07-14 10:54:11 +0100
+committer BMDuke <hi@stephenduke.co.uk> 2022-07-14 10:54:11 +0100
+
+    Updated README
+
+
+:100644 100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 d66bee33bec1d5f16567637421927b1a8ffd62ee M	README
+:100644 100644 5b5198b9c3f3097b79d2920df377d400a88742b5 c8340568aa332670f0768060bf73590e18f5262f M	ci_cd/jenkins_home/logs/tasks/Periodic background build discarder.log
+:100644 100644 65428351d4bc377bffcb23f96c354843f4cbc08b 5b5198b9c3f3097b79d2920df377d400a88742b5 M	ci_cd/jenkins_home/logs/tasks/Periodic background build discarder.log.1
+:100644 100644 a57f441749284703a96182726c679cfc8febb17d 65428351d4bc377bffcb23f96c354843f4cbc08b M	ci_cd/jenkins_home/logs/tasks/Periodic background build discarder.log.2
+:100644 100644 b26c7e8549594f2780233c8c2285316e99121cc7 a57f441749284703a96182726c679cfc8febb17d M	ci_cd/jenkins_home/logs/tasks/Periodic background build discarder.log.3
+:100644 100644 63fbcec822f17167d03b1f5a51677142a015d7fa b26c7e8549594f2780233c8c2285316e99121cc7 M	ci_cd/jenkins_home/logs/tasks/Periodic background build discarder.log.4
+:100644 100644 eb45cb8f2b4f7161b80b43b84ad901ec401d7777 63fbcec822f17167d03b1f5a51677142a015d7fa M	ci_cd/jenkins_home/logs/tasks/Periodic background build discarder.log.5
+commit 81a96b8e49be393665e8fd4c456cb9cfd5d387c3
+tree 4b1cd4f58c0926d4f79b837b7cebda4361368599
+parent 7f570e951a4e5061aef46727431849ce6f1294c2
+author BMDuke <hi@stephenduke.co.uk> 2022-07-14 10:23:08 +0100
+committer BMDuke <hi@stephenduke.co.uk> 2022-07-14 10:23:08 +0100
+
+    Re-instated Nginx with Jenkins and API
+
+
+:100644 100644 1fe4bb5eb035ab4317d6abce90ded431923ac039 bab870bb9e6a6e905311b4c7179e39bab0afa2c3 M	ci_cd/jenkins_home/.cache/fontconfig/3830d5c3ddfd5cd38a049b759396e72e-le64.cache-7
+:100644 100644 81f76e80005c87582e40923c357f034491fcdc7d f606ab8f6aae5f788ee52eb17c5b0e21801c74ed M	ci_cd/jenkins_home/.cache/fontconfig/4c599c202bc5c08e2d34565a40eac3b2-le64.cache-7
+:100644 100644 8d9546b5e2c55ec2c524519e42eda6d7f31823ff 02e7ae729eba832f8b9d7b851a66667c4b976d53 M	ci_cd/jenkins_home/.cache/fontconfig/7ef2298fde41cc6eeb7af42e48b7d293-le64.cache-7
+:100644 100644 532dd9541ac9b8cca2b6ef67668b1dc29323f211 b8447099a2aeaa23c51d70a5bf420e1e080d5a80 M	ci_cd/jenkins_home/.cache/fontconfig/d589a48862398ed80a3d6066f4f56f4c-le64.cache-7
+:000000 100644 0000000000000000000000000000000000000000 604b2346b2820ef5f5203d388981e95c1b7075f9 A	ci_cd/jenkins_home/.java/fonts/11.0.15/fcinfo-1-6397c40c4cef-Linux-5.15.0-40-generic-en.properties
+:000000 100644 0000000000000000000000000000000000000000 4c8783ac3d49078bc51a0ad45b78066f87d8cc1c A	ci_cd/jenkins_home/.java/fonts/11.0.15/fcinfo-1-9e0a7b6bafbd-Linux-5.15.0-40-generic-en.properties
+:000000 100644 0000000000000000000000000000000000000000 c99a6fd4a5473c9029fd905ed8d32775236c3702 A	ci_cd/jenkins_home/.java/fonts/11.0.15/fcinfo-1-fb6513416d9f-Linux-5.15.0-40-generic-en.properties
+:100644 100644 062a9f5ceb2ba229679c877e3b0f9826a3f0ed67 dbb983827f898935aab52709352fe92aec50e1c1 M	ci_cd/jenkins_home/config.xml
+:100644 100644 ee745a1131e8a2bf6af658d71d2e3c0956eff0d7 c753dd00ec5d8122d812a3b4b72ee4908f333929 M	ci_cd/jenkins_home/copy_reference_file.log
+:100644 100644 90fdf0350ac73adac0ae65f8b8b1c76ceea45bd4 88040b65dcdbf8fd6dacd7d3e45fc800cf760216 M	ci_cd/jenkins_home/fingerprints/b2/53/187d3c93ce45fe41e1dd27b392eb.xml
+:100644 100644 8b61908dbbb5cedc790dfeb2fa5c8cd89f1a22c8 298e5a41410523f169312bc8c1e702078ca18306 M	ci_cd/jenkins_home/jenkins.install.InstallUtil.lastExecVersion
+:000000 100644 0000000000000000000000000000000000000000 53d589cb639270a327b5c63bebca6049c9bb23c4 A	ci_cd/jenkins_home/jenkins.security.apitoken.ApiTokenPropertyConfiguration.xml
+:100644 000000 42c8c8e51c30f6a42c798520e630166ed76fa344 0000000000000000000000000000000000000000 D	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/40/workflow/12.xml
+:100644 000000 fe9cdece736188e29b8cbbe7c4ac9b227c2a2023 0000000000000000000000000000000000000000 D	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/40/workflow/13.xml
+:100644 000000 54c96d236a4dd840eb808150e0a4d038b85266d1 0000000000000000000000000000000000000000 D	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/41/log-index
+:100644 000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0000000000000000000000000000000000000000 D	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/42/changelog10742759439846150741.xml
+:100644 000000 54c96d236a4dd840eb808150e0a4d038b85266d1 0000000000000000000000000000000000000000 D	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/42/log-index
+:100644 000000 78e324cec930461c13063a5ca329415c809cdc6f 0000000000000000000000000000000000000000 D	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/42/workflow/10.xml
+:100644 000000 157a15c21406071032ea34d4756c36da7142f6f3 0000000000000000000000000000000000000000 D	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/42/workflow/11.xml
+:100644 000000 de682284ccd8f0dd16883cf9fb97a17ed637b9ce 0000000000000000000000000000000000000000 D	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/42/workflow/14.xml
+:100644 000000 360cc6c1dfdbe6a0824829dba242d8866adf9cbe 0000000000000000000000000000000000000000 D	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/42/workflow/15.xml
+:100644 100644 b3cbfe57022f40e151279724c0ebcfea47397294 e7245f68af171a4c939c746481799beaad4f9871 R090	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/41/build.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/45/build.xml
+:100644 100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 R100	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/40/changelog6134370495024696575.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/45/changelog2546981136027807604.xml
+:100644 100644 0b4a56634c89ed7f9e4cf838927b7ca4938234e7 f8afd6f910ef09a67817ce424bbb0164f087fd10 R095	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/42/log	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/45/log
+:100644 100644 54c96d236a4dd840eb808150e0a4d038b85266d1 54c96d236a4dd840eb808150e0a4d038b85266d1 R100	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/40/log-index	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/45/log-index
+:100644 100644 25a83248e933001ff92f3e63e1bda70b0e110c73 85d708d85ad2d0ae417e01c4abdacae48a702dff R097	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/40/workflow/10.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/45/workflow/10.xml
+:100644 100644 a19aa1c3a1125044ac27d2b427fe79d3e9afae60 815703befa1fee89fba312bf1726e18a5e6a5c13 R097	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/41/workflow/11.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/45/workflow/11.xml
+:100644 100644 4792a841309d86c7de4d5e1f6ebdb1d979d8e3b2 1fe4cd1067ebacaf10632da0d55ce4cc5d78f2de R097	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/41/workflow/12.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/45/workflow/12.xml
+:100644 100644 7b6dc39e6987e2a6556e688cdf888a98df65c838 b182db0329e12a95c42572a5dc1de2cc4f1aed6f R097	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/42/workflow/13.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/45/workflow/13.xml
+:100644 100644 1e0ce1d05a6d48882ecf1b1eeb021e3195dca297 e4532c5687303c654baaf7879d9041beaee35ba6 R097	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/40/workflow/14.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/45/workflow/14.xml
+:100644 100644 bb9c3552738e5085c00d710288b738e3bbf24a59 99373ad6598e2ac5f72bfe247d674ef7f62931e8 R097	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/40/workflow/15.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/45/workflow/15.xml
+:100644 100644 b7aede92f1bb19afe6c8531bbb0a8c458b02953d f20f3ac28efcc8c249eb464f9561b02a48eaf88a R087	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/40/workflow/2.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/45/workflow/2.xml
+:100644 100644 d5fa714d9675cea0850b337b9ca66809078180df c0c10079407a2858782b7ca72ff5f2040a89da9d R093	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/42/workflow/3.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/45/workflow/3.xml
+:100644 100644 40277012ca7091736433c7b56daa435eb3345d98 caa13d0e858a57e1e01bd6afbbb2911a3003e449 R091	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/42/workflow/4.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/45/workflow/4.xml
+:100644 100644 2e04b90bdbbd4122c67b324d7be59cc8cf47c7bb ea0b89847373ff74af344f95fca9d86b222e8df5 R098	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/42/workflow/5.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/45/workflow/5.xml
+:100644 100644 9f679bd770026d83a20554f37d299e09e22ca9a3 aee7d3090674590276f5cd2308cb51a3ab3998c5 R096	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/41/workflow/6.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/45/workflow/6.xml
+:100644 100644 27a630fe5e4793d6e85c7253243aeb9003b64a72 5ec503caeb5be738e3bc9014f2bcba3ade971a05 R090	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/41/workflow/7.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/45/workflow/7.xml
+:100644 100644 bd094fa62e29c46c73492fbb96ad01101a0feb2c 5a410139c7d95bf456a98164c91f4308c829c519 R094	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/40/workflow/8.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/45/workflow/8.xml
+:100644 100644 04a3736e545317de5777f7439cacf90b454079fd e27b61e1951ff203e0ecedc15aa690d5f598a7db R091	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/40/workflow/9.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/45/workflow/9.xml
+:100644 100644 fdc0d4ff41d4335bddfe27fc2cdc4f5994686302 c95da76f638a896a842e1c02e4314198a31792cf R090	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/40/build.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/46/build.xml
+:000000 100644 0000000000000000000000000000000000000000 077cf008f2740538cd9836d481e3beac99489b1e A	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/46/changelog14589864682182411310.xml
+:100644 100644 18a908400bcc9cfeaff0c349a797e39e3d3a1a05 1e88423c056c56b59e0d6f0bdf8aa7f44feeae73 R089	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/40/log	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/46/log
+:000000 100644 0000000000000000000000000000000000000000 9a69aef84ceff9c32749c9b3dd75807c1c3f02fb A	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/46/log-index
+:100644 100644 30ecdd3768ee44b36e8943e4fc47e986f5525776 702f2b58ff5d1a57ee261f7a3b9d8385b19d3e76 R097	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/41/workflow/10.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/46/workflow/10.xml
+:100644 100644 daaa09430a9c723e440286450bc65e7bc7bb5d10 e00bfe7dc7a13af96e638f68dff23ed22f9367bc R097	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/40/workflow/11.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/46/workflow/11.xml
+:100644 100644 0a85fa149afa7fa6d5b62b5233051e2eb79f69f5 04a9f2baba42eb0d3485bd5948d9fc85a7f85e74 R097	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/42/workflow/12.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/46/workflow/12.xml
+:100644 100644 2302c11abe06add184252cbc36101e1efe0bd3c0 4c8621777c7ab64c9a3dfed839118ffb88591d19 R097	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/41/workflow/13.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/46/workflow/13.xml
+:100644 100644 72fd94f632919d60367f130cef94a84a665740b0 2ac2a6706e3fa95988321abf13050a4a6989a287 R097	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/41/workflow/14.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/46/workflow/14.xml
+:100644 100644 80b35d72f3b4f1fc45f0870f81686a290bf4a45e e0ec26ecc8b4716b8dfd7e294f91cbeba9dc86ee R097	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/41/workflow/15.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/46/workflow/15.xml
+:100644 100644 5d93d60ab7c559d95c5a9bcbc409e6823353360e 4215048dbe22a3a8dee41bd1445972fd1cc069bb R087	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/41/workflow/2.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/46/workflow/2.xml
+:100644 100644 9cc439aba4c44addf228de29f03771fccc7a8a53 8515b73baf47c6191b2904e8b2075022382cf5ad R093	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/41/workflow/3.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/46/workflow/3.xml
+:100644 100644 89718f51ae819d78474135645486231296b0062d fa0fdaed3c646b25c5c228dd34987e86c43ae8ac R091	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/41/workflow/4.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/46/workflow/4.xml
+:100644 100644 9598f5068f716de67812e789da59867eec1a54de c1b050b6f7cd1cbf711b8c99f9d50aa646df7fa0 R098	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/40/workflow/5.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/46/workflow/5.xml
+:100644 100644 370132d669cd6f1910553eb83898ffe76a6bb00a f9e4c2efdd0a68654a8f5d017de8f8738a92e496 R096	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/42/workflow/6.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/46/workflow/6.xml
+:100644 100644 6bd923767f64dc1484e1737f6bdad5915ca2f305 7b4906c0ed6d5745c3c1198a7ca3b302fc2d4809 R090	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/42/workflow/7.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/46/workflow/7.xml
+:100644 100644 50f205dce99be64750a63d1bbf5b381a612d8b51 8b830d025133be4eaeb4d266e1fab64ef5a1aa13 R094	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/41/workflow/8.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/46/workflow/8.xml
+:100644 100644 84bffc11010ea06cda44682de88dbccf2a04832a 18cbd569e16a02a835ed8dda09be44ef9fa51602 R091	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/41/workflow/9.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/46/workflow/9.xml
+:100644 100644 13ea8a73f12b4a497f3ffa01149ae6c1b5d3f507 5fe4b6800bf458cb506a2ff6a2384885835b0b53 R089	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/42/build.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/47/build.xml
+:100644 100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 R100	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/41/changelog33728770333691416.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/47/changelog4495395109826204411.xml
+:100644 100644 24bf26875b2dc3dddb52b2411cc1fde3a54fcba9 d291c8fb1bdc6f17923741f1a3eff07de24ad47e R064	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/41/log	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/47/log
+:000000 100644 0000000000000000000000000000000000000000 908348702710e01d431542d1ad9102ab7d450324 A	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/47/log-index
+:000000 100644 0000000000000000000000000000000000000000 686fc91b549825e279a793265474d1934ed390a3 A	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/47/workflow/10.xml
+:000000 100644 0000000000000000000000000000000000000000 015b8e29a60cc22261574556eee846cf4f7a4905 A	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/47/workflow/11.xml
+:000000 100644 0000000000000000000000000000000000000000 be02615cfefc7cfc5f3f426aadd8ded1b467bfdf A	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/47/workflow/12.xml
+:000000 100644 0000000000000000000000000000000000000000 4e56f4f23b7d80f7c6b16266d2b33aab608aff7c A	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/47/workflow/13.xml
+:000000 100644 0000000000000000000000000000000000000000 44d7a020a54fe35a4dcef88a1bec7f6cf2a26180 A	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/47/workflow/14.xml
+:000000 100644 0000000000000000000000000000000000000000 442b01548d0c9120e93ca0dfe9e60c661d4decb5 A	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/47/workflow/15.xml
+:000000 100644 0000000000000000000000000000000000000000 c77071981ced0dafccd28023e84123188f05194f A	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/47/workflow/16.xml
+:100644 100644 f4fdb58f4b751cb285528776e56cbb7cf3153d8e 1e28a96c4b6036750329b3f619f4055adc84054c R085	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/6/workflow/3.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/47/workflow/17.xml
+:100644 100644 2614b62581fa11ea4e1f0df939cdc56b71ae5ec2 7b58bb9bbb2bdf7a7012e88ac0874cf7f71d0685 R087	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/42/workflow/2.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/47/workflow/2.xml
+:100644 100644 2423b5cf683264875eab79a2497c01053724d40c 87891b7399cbea346ebb61476460c8868eae01b1 R093	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/40/workflow/3.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/47/workflow/3.xml
+:100644 100644 133ae8c46d505fea5e0cf62b2f195dd329638c90 7bda27a4092b0da70742f13d0543b3a438d4f5b4 R091	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/40/workflow/4.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/47/workflow/4.xml
+:100644 100644 c06047987d08dfe37046c33ad24434ea44faba07 3beab7ed0c66ad1d85350b217e0c20db6d1e8597 R098	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/41/workflow/5.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/47/workflow/5.xml
+:100644 100644 75622fc00ff44b6dad14ea6c51438a98409615fb 9c2a10c8a6886bd890d381a5e679d7ad1377d3b4 R096	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/40/workflow/6.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/47/workflow/6.xml
+:100644 100644 3369bdd3c1e2a8c5159df82df2e4712f6a96c5dd 2b078c7cf98cd8cb73a93412acc57b3be7985979 R090	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/40/workflow/7.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/47/workflow/7.xml
+:100644 100644 dab0f24bcb19bfd4757ae00579cc066db8eead53 bb132e3bce5e120ffd0647454ead7c0d476cbfd6 R094	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/42/workflow/8.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/47/workflow/8.xml
+:100644 100644 8c1eb13b5e63b8f7b75b3dccb514d4c5dea11a3a 48b1a8481877fe1789007e0cb68fcd21e28722d7 R091	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/42/workflow/9.xml	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/47/workflow/9.xml
+:100644 000000 52879f4a76f35889fa5dd021b6a7f7d129528162 0000000000000000000000000000000000000000 D	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/6/build.xml
+:100644 000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0000000000000000000000000000000000000000 D	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/6/changelog7561016633831089843.xml
+:100644 000000 1cd0428bedba34883855b1324d2d36d321688f91 0000000000000000000000000000000000000000 D	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/6/log
+:100644 000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0000000000000000000000000000000000000000 D	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/6/log-index
+:100644 000000 03cbaf1113d171aff22277bd74bc5f0d5c103261 0000000000000000000000000000000000000000 D	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/6/workflow/2.xml
+:100644 100644 bf9c254dd5e140d38b1bd3bd030c395c4a0ea22b 5c511466732938fd4af922512399e2e23f3b4eac M	ci_cd/jenkins_home/jobs/EBML-Metadata-API/builds/permalinks
+:100644 100644 ea90ee31980757b2e469741512bcb39e73494e78 21e72e8ac3d7e23bd6532b5f1f4a6bdf8362e6cf M	ci_cd/jenkins_home/jobs/EBML-Metadata-API/nextBuildNumber
+:100644 000000 efba19e4e366c0a257bdd28679d14ac3fa1772ad 0000000000000000000000000000000000000000 D	ci_cd/jenkins_home/queue.xml
+:100644 100644 5b479c18f72270a4d29f5e67e0d3f3c09809aee9 8103ae9e00a723e3e36f9eef51f216f9ab3f1416 M	ci_cd/jenkins_home/queue.xml.bak
+:100644 100644 40e7c1748815add53948ec4098aad542823cc490 a8fb62c36680842322b3e0d536a04a606fa32a0e M	ci_cd/jenkins_home/updates/default.json
+:100644 100644 18794ad2fb5766ff7c36fa4908690da0f5e0e6d4 e057fcdf8ec4ce8f40c63da795c7f8198f7d0cc9 M	ci_cd/jenkins_home/war/META-INF/JENKINS.RSA
+:100644 100644 3e3d004333f78d7eb97c88d38db5b43ae8ce0a82 bf36c8a39053efe54df41209067e8fb67b510c1d M	ci_cd/jenkins_home/war/META-INF/JENKINS.SF
+:100644 100644 1f3571a7404b473d4c3eefb2cea61bcffb02b79b de3f1a6093f94f6a257275055ed5ce34346200ba M	ci_cd/jenkins_home/war/META-INF/MANIFEST.MF
+:100644 100644 a8216344f11d1dfa959b33213b8c5d3b80b6ec08 425953528ad082592b94868bf762399e9ac0e833 M	ci_cd/jenkins_home/war/META-INF/maven/org.jenkins-ci.main/jenkins-war/pom.properties
+:100644 100644 af8783c6dde68ee83d28f31db50d89e06cca76f7 24acf4e0b14f088fe71d981d89b51681d342d01f M	ci_cd/jenkins_home/war/META-INF/maven/org.jenkins-ci.main/jenkins-war/pom.xml
+:100644 100644 ac908c35665f0bc1bfa44bb5ada55e7e0a11c7b8 b72458d8af7292b46e7fd1ed2c6aef6de295b666 M	ci_cd/jenkins_home/war/WEB-INF/classes/META-INF/licenses.html
+:100644 100644 0bf43c9bf7f9c3f02a5c960e52b51021f90395a0 d205428ab6bf1a6beb6ae10c3a81bce770aca1e6 M	ci_cd/jenkins_home/war/WEB-INF/classes/META-INF/licenses.xml
+:100644 100644 d850a8f7ba4ada5630e619f1643a3e3add71d005 84f8e0bcdcac41a7a3b6ffe28c58a6079ca5f5b4 M	ci_cd/jenkins_home/war/WEB-INF/classes/dependencies.txt
+:100644 100644 c116125f3ec5f3228b818e0c3d98b8c40ec72a5b a36518f21df16b63e8453c393781b5214998e129 R095	ci_cd/jenkins_home/war/WEB-INF/lib/cli-2.346.1.jar	ci_cd/jenkins_home/war/WEB-INF/lib/cli-2.346.2.jar
+:100644 100644 1ef95db3c313b2e19eb2699664bf7bac481e54a6 dedeacad2c18fc810a679b8626b05c9141070ab1 R075	ci_cd/jenkins_home/war/WEB-INF/lib/jenkins-core-2.346.1.jar	ci_cd/jenkins_home/war/WEB-INF/lib/jenkins-core-2.346.2.jar
+:100644 100644 bc9c81e357f39e92c518b8e4c6050e7eb8b8c41f 3c260413200bffc7c4f5f87bb3e2a74d7aa3db45 M	ci_cd/jenkins_home/war/WEB-INF/web.xml
+:100644 100644 852d14cc0e41b2cc12de4b673f8e89ac9e632d83 eafe40a3dbfe792888b5e71d60837ce82608d979 M	ci_cd/jenkins_home/war/jsbundles/simple-page.css.map
+:100644 100644 781bff2688a67e41d76f68aa51dfa1bc1aaf300e 4ef1ad1f98cdf2c861c7a3748cdbbac69c7583d4 M	ci_cd/jenkins_home/war/jsbundles/styles.css
+:100644 100644 ff0ecf544177314134f8e43288774e471dc1bc60 65bc7c60774193650cb064cfd0127ea740f3eac3 M	ci_cd/jenkins_home/war/jsbundles/styles.css.map
+:100644 100644 c16e23edf5993bbfd56a88aad4ce157fb53467c8 51f3b203a85805b52df8e2c58781db92d42b30c0 M	ci_cd/jenkins_home/war/scripts/hudson-behavior.js
+:160000 160000 a8670c90366bcd01eaf40a350acd9223df95c544 7f570e951a4e5061aef46727431849ce6f1294c2 M	ci_cd/jenkins_home/workspace/EBML-Metadata-API
+:100644 100644 90bb04ac8e85d097c27da1125c2e016d07699d7c 997d3909e1b4907d0aa67175fba4a84a5277626d M	docker-compose.yml

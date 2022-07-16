@@ -1,0 +1,18 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.model.UserIdMapper>
+  <version>1</version>
+  <idToDirectoryNameMap class="concurrent-hash-map">
+    <entry>
+      <string>hi</string>
+      <string>hi_2617623330785665372</string>
+    </entry>
+    <entry>
+      <string>ebml-interview</string>
+      <string>EBMLInterview_7817601567258711713</string>
+    </entry>
+    <entry>
+      <string>embl</string>
+      <string>embl_1228697083432444934</string>
+    </entry>
+  </idToDirectoryNameMap>
+</hudson.model.UserIdMapper>

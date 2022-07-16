@@ -1,0 +1,19 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2022-07-12 11:00:25.198 UTC</timestamp>
+  <md5sum>b253187d3c93ce45fe41e1dd27b392eb</md5sum>
+  <fileName>Credential id=Github-EMBL-Interview-SSH name=EMBL-Interview (SSH private key for EMBL Metadata project for EMBL interview)</fileName>
+  <usages>
+    <entry>
+      <string>EBML-Metadata-API</string>
+      <ranges>6,39-50</ranges>
+    </entry>
+  </usages>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@1139.veb_9579fca_33b_">
+      <timestamp>1657840116565</timestamp>
+      <itemFullName>EBML-Metadata-API</itemFullName>
+      <timestamp0>1657800964761</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+  </facets>
+</fingerprint>

@@ -17,4 +17,4 @@ COPY ./.env ./.env
 RUN pip install --no-cache-dir --upgrade -r ./requirements.txt
 
 # Run the start commands
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80", "--root-path", "/api"]

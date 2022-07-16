@@ -1,7 +1,16 @@
+import logging
+
+from fastapi import HTTPException
+
 from sqlalchemy import select, or_
 from sqlalchemy.orm import Session, Query
 from sqlalchemy.sql import exists
 from sqlalchemy.sql.expression import Select
+from sqlalchemy.engine import Result
+from sqlalchemy.exc import DataError, DatabaseError, \
+                            OperationalError, \
+                            StatementError, \
+                            TimeoutError
 
 from database.models import DataRelease, Genome, GenomeDatabase, Organism
 from database.schemas import MetaDataResponseList
@@ -9,10 +18,13 @@ from database.schemas import MetaDataResponseList
 
 '''
 This file contains commonly used database queries and subqueries.
-
 '''
+## Configure logger
+FORMAT = "%(levelname)s:\t [%(asctime)s] [%(message)s]" 
+logging.basicConfig(level=logging.INFO, format=FORMAT)
 
 
+## Define functions
 def get_metadata(   
     db: Session,
     organism: str = None, 
@@ -41,8 +53,8 @@ def get_metadata(
 
         query = filter_query_on_dbtype(query, db_type)
 
-    # Submit DB transation
-    results = db.query(query.subquery()).offset(offset).limit(limit)
+    # Submit DB transation query_metadata_db
+    results = query_metadata_db(db, query, offset, limit)
     
     # Return results
     return [r._asdict() for r in results]
@@ -182,6 +194,90 @@ def filter_query_on_dbtype(query: Select, dbtype: str) -> Select:
 
     return query
 
+def handle_database_errors(func, *args, **kwargs):
+    '''
+    This is a decorator to be wrapped around calls to the database.
+    
+    It handles errors related to accessing the database and raises
+    the appropriate exceptions in the application by mapping SQLAlchemy
+    exceptions to FastAPI exceptions.
+    '''
+
+    def wrapper(*args, **kwargs):
+
+        try: 
+
+            results = func(*args, **kwargs)
+
+        except OperationalError as err:
+
+            # Log the error message
+            message = f"Operational error. {err}"
+            logging.error(message)
+            
+            # Handle the exception
+            client_message = f"An unexpected error has occured. Please retry."
+            raise HTTPException(status_code=503, detail=client_message)            
+
+        except DataError as err:
+
+            # Log the error message
+            message = f"Data passed to query invalid. {err.statement}"
+            logging.info(message)
+            
+            # Handle the exception
+            raise HTTPException(status_code=400, detail=message)
+
+        except DatabaseError as err:
+
+            # Log the error message
+            message = f"Database Error. {err}"
+            logging.critical(message)
+            
+            # Handle the exception
+            client_message = f"Database temporarily unavailable. Please retry after 60 seconds"
+            raise HTTPException(status_code=503, detail=client_message, headers={"Retry-After":60})
+
+        except StatementError as err:
+
+            # Log the error message
+            message = f"SQL statement invalid. {err.statement} {err.params}"
+            logging.critical(message)
+            
+            # Handle the exception
+            client_message = f"An unexpected error has occured. This is being dealt with by our technical team. We are sorry for the inconvenience, please retry at a later date."
+            raise HTTPException(status_code=500, detail=client_message)
+
+        except TimeoutError as err:
+
+            # Log the error message
+            message = f"Connection timeout error. {err}"
+            logging.error(message)
+            
+            # Handle the exception
+            client_message = f"Due to high demand, the connection had timed out. Please retry or come back at a later date."
+            raise HTTPException(status_code=504, detail=client_message)                         
+
+        else:
+
+            return results
+    
+    return wrapper    
+
+
+@handle_database_errors
+def query_metadata_db(db: Session, query: Select, offset: int, limit: int) -> Result:
+    '''
+    This takes an SQLAlchemy session, a query, and offset and limit parameters
+    and qeuries the database for the results.
+    '''
+
+    results = db.query(query.subquery()).offset(offset).limit(limit)
+
+    return results
+
+
+@handle_database_errors
 def check_organism_exists_in_db(db: Session, organism: str) -> bool:
     '''
     Takes a SQLAlchemy session and an organism name and checks to see whether

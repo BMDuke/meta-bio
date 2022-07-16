@@ -1,0 +1,85 @@
+version: "3.9"
+
+services:
+
+  metadata-api:
+    build: ./api
+    container_name: metadata_api
+    ports:
+      - "4000:80"
+    restart: unless-stopped
+    logging:
+      driver: "fluentd"    
+
+
+  jenkins-server:
+    build: ./ci_cd
+    container_name: jenkins
+    ports: 
+      - "4100:8080"
+      - "4101:5000"
+    volumes:
+      - "./ci_cd/jenkins_home:/var/jenkins_home"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    privileged: true
+    restart: unless-stopped
+    environment:
+     - JENKINS_OPTS="--prefix=/jenkins"
+    logging:
+      driver: "fluentd"     
+
+  nginx-server:
+    build: ./reverse_proxy
+    container_name: nginx
+    ports:
+      - "80:80"
+    restart: unless-stopped  
+    logging:
+      driver: "fluentd"     
+
+  fluentbit-logger:
+    build: ./logging/fluentbit
+    container_name: fluentbit
+    ports:
+      - "24225:24225"
+    env_file:
+      - .env      
+    restart: unless-stopped  
+    depends_on:
+      - postgres-log-db
+
+  fluentd-logger:
+    build: ./logging/fluentd
+    container_name: fluentd
+    ports:
+      - "24224:24224"
+    volumes:
+      - ./logging/fluentd/fluentd.conf:/fluentd/etc/fluentd.conf
+    environment:
+      - FLUENTD_CONF=fluentd.conf
+    restart: unless-stopped
+
+  postgres-log-db:
+    build: ./logging/postgresql
+    container_name: postgres
+    volumes:
+      - "./logging/postgresql/pg_data:/var/lib/postgresql/data"
+    ports:
+      - "4200:5432"
+    env_file:
+      - .env
+    restart: unless-stopped
+
+  grafana-log-viz:
+    build: ./logging/grafana
+    container_name: grafana
+    volumes:
+      - "./logging/grafana/gf_data:/var/lib/grafana"    
+      # - "./logging/grafana/gf_conf:/etc/grafana"    
+    ports:
+      - "4300:3000"    
+    restart: unless-stopped
+    depends_on:
+      - postgres-log-db    
+    logging:
+      driver: "fluentd"        
