@@ -17,7 +17,8 @@ SQLALCHEMY_DATABASE_URL = config('SQLALCHEMY_DATABASE_URL')
 
 # Create the sqlalchemy engine
 engine = create_engine(
-    SQLALCHEMY_DATABASE_URL
+    SQLALCHEMY_DATABASE_URL,
+    pool_pre_ping=True # Pessemistic disconnection handling
 )
 
 # Create a local session
