@@ -5,3 +5,4 @@ sudo chmod 666 /var/run/docker.sock
 And for grafana
 sudo chown -R 472:472 logging/grafana/gf_conf/
 sudo chown -R 472:472 logging/grafana/gf_data/
+
