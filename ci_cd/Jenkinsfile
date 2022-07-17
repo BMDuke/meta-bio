@@ -27,6 +27,12 @@
 // }
 
 node {
+    
+    environment {
+        userId = "${env.UID}";
+        groupId = "${env.GID}";
+    }
+    
     def app
 
     stage('Clone repository') {
@@ -39,7 +45,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("metadata_api", "./api")
+        app = docker.build("metadata_api", "--build-arg uid=$userId --build-arg gid=$groupId ./api")
     }
 
     stage('Test image') {
