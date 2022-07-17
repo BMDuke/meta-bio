@@ -24,14 +24,14 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("metadata_api", "--build-arg UID=${JENKINS_USER_ID} --build-arg GID=${JENKINS_GROUP_ID} --build-arg UNAME=${JENKINS_USER_NAME} ./api")
+        app = docker.build("metadata_api", "--build-arg UID=${env.JENKINS_USER_ID} --build-arg GID=${env.JENKINS_GROUP_ID} --build-arg UNAME=${env.JENKINS_USER_NAME} ./api")
     }
 
     stage('Test image') {
         /* Ideally, we would run a test framework against our image.
          * For this example, we're using a Volkswagen-type approach ;-) */
 
-        app.inside("-u ${JENKINS_USER_ID}:${JENKINS_GROUP_ID}") {
+        app.inside("-u ${env.JENKINS_USER_ID}:${env.JENKINS_GROUP_ID}") {
 //             sh 'echo "Tests passed"'
             sh 'pytest -v --junitxml=results/results.xml'
             sh 'cat results/results.xml'
