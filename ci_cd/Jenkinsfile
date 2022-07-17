@@ -18,8 +18,7 @@ node {
          * docker build on the command line */
         
         withEnv(["JENKINS_USER_NAME=${sh(script:'id -un', returnStdout: true).trim()}", "JENKINS_USER_ID=${sh(script:'id -u', returnStdout: true).trim()}", "JENKINS_GROUP_ID=${sh(script:'id -g', returnStdout: true).trim()}"]) { 
-//              app = docker.build("metadata_api", "--build-arg UID=${env.JENKINS_USER_ID} --build-arg GID=${env.JENKINS_GROUP_ID} --build-arg UNAME=${env.JENKINS_USER_NAME} ./api")
-           sh "docker-compose up -d"
+             app = docker.build("metadata_api", "--build-arg UID=${env.JENKINS_USER_ID} --build-arg GID=${env.JENKINS_GROUP_ID} --build-arg UNAME=${env.JENKINS_USER_NAME} ./api")
         }
     }
 
@@ -34,7 +33,15 @@ node {
 //                 sh 'pytest'
 // //                 sh 'pytest -v --junitxml=results/results.xml'
 // //                 sh 'cat results/results.xml'
-//             }            
+//             }   
+           
+           docker.image(app).withRun {c -> 
+               sh 'echo "Tests passed"'
+               sh 'pytest'
+               sh 'pytest -v --junitxml=results/results.xml'
+               sh 'cat results/results.xml'
+               sh "docker logs ${c.id}"
+           }
                
                
            
