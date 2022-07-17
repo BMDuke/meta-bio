@@ -14,7 +14,7 @@ node {
 
 //     }    
     
-//     sh 'docker run metadata_api_image pytest'
+    sh 'docker run -p 1234:80 metadata_api_image pytest'
     
 //     sh 'cat results/results.xml'
 
