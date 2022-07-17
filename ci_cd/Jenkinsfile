@@ -27,17 +27,10 @@ node {
          * For this example, we're using a Volkswagen-type approach ;-) */
 
         withEnv(["JENKINS_USER_NAME=${sh(script:'id -un', returnStdout: true).trim()}", "JENKINS_USER_ID=${sh(script:'id -u', returnStdout: true).trim()}", "JENKINS_GROUP_ID=${sh(script:'id -g', returnStdout: true).trim()}"]) { 
-             
-//             app.inside("-u ${env.JENKINS_USER_ID}:${env.JENKINS_GROUP_ID}") {
-//                 sh 'echo "Tests passed"'
-//                 sh 'pytest'
-// //                 sh 'pytest -v --junitxml=results/results.xml'
-// //                 sh 'cat results/results.xml'
-//             }   
            
            app.withRun("-u ${env.JENKINS_USER_ID}:${env.JENKINS_GROUP_ID}") {c -> 
                sh 'echo "Tests passed"'
-               sh 'pytest'
+               sh 'python3 -m pytest'
                sh 'pytest -v --junitxml=results/results.xml'
                sh 'cat results/results.xml'
                sh "docker logs ${c.id}"
