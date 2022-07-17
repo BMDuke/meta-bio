@@ -18,11 +18,13 @@ client = TestClient(app)
 def test_http_methods():
     '''
     '''
-
+    
+    res_get = client.post('/databases?release=106')
     res_post = client.post('/databases')
     res_put = client.put('/databases')
     res_patch = client.patch('/databases')
 
+    assert res_get.status_code == 200
     assert res_post.status_code == 405
     assert res_put.status_code == 405
     assert res_patch.status_code == 405
