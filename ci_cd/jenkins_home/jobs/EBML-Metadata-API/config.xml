@@ -28,7 +28,7 @@
       </userRemoteConfigs>
       <branches>
         <hudson.plugins.git.BranchSpec>
-          <name>*/jenkins_config</name>
+          <name>*/main</name>
         </hudson.plugins.git.BranchSpec>
       </branches>
       <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
