@@ -13,6 +13,7 @@ ci_cd/jenkins_home/caches
 
 ## Logging
 logging/postgresql/pg_data
+logging/grafana/gf_data/alerting
 
 ## RabbitMQ
 queue/rmq_data/.bash_history
