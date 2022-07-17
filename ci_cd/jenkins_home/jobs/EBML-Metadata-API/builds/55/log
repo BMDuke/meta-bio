@@ -1,0 +1,332 @@
+Started by user [8mha:////4AUZGAdEcswgGtQIG6ubSAGhMCP8SZAB5svQPxo6tnLNAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/dLi1CL91NykHACZCOS6vwAAAA==[0membl
+Obtained ci_cd/Jenkinsfile from git https://github.com/BMDuke/meta-bio.git/
+[8mha:////4C0+H206qsnElhheTDp5YHYI+0D+iOiHM4ymzuLAVNr9AAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4BYNEbfHhAKFcYPnJiyfQ0i3aXtaDGHKMgP/Fnok0jTmAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4MvrZ/vvA7DcSm+mH1o/pEhvtJrVYuHW7a4/qDUODUj3AAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZR/eT83ILSktQifY2k0sycEt3MPE19AHHxbH3KAAAA[0mJenkins in /var/jenkins_home/workspace/EBML-Metadata-API@2
+[8mha:////4E+uIbftdsB8vX4FCfmLaC090ASQfI+RjdqddSydVN1iAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4E/lsRw+yqlq5XrwlgMstZIJ5dmEywSFPfSrnO57aRvxAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4KIMkEZi9DOM/iw8cTv4+CPbPVnpU+zqnUygZ3ArnAojAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Clone repository)
+[8mha:////4HZK53ryHROzVIVpj+xdvXsX09x/V4XNnnH8xfEFFzc0AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+The recommended git tool is: NONE
+using credential Github-EMBL-Interview-SSH
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/EBML-Metadata-API@2/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/BMDuke/meta-bio.git/ # timeout=10
+Fetching upstream changes from https://github.com/BMDuke/meta-bio.git/
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_SSH to set credentials SSH private key for EMBL Metadata project for EMBL interview
+ > git fetch --tags --force --progress -- https://github.com/BMDuke/meta-bio.git/ +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 52ad98380a40546e5ce2f681b3c3ddd75bac7cc3 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 52ad98380a40546e5ce2f681b3c3ddd75bac7cc3 # timeout=10
+Commit message: "Update Jenkinsfile"
+ > git rev-list --no-walk 52ad98380a40546e5ce2f681b3c3ddd75bac7cc3 # timeout=10
+[8mha:////4MbkuphECV0u/syd4vhDwfTmGlMg1dkyQOEiuEuBaukmAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4FBLS80XutmJbA4qpD4LJFxQNaWV7lo6pwan/vknAA/0AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4D2l7/iDTThVIYAK4sW7TYAy4ph3qlF5XIVb2ujIJOThAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] stage
+[8mha:////4IXGLeTT7W4wbyeghCkQHpy8gtWavQLBmXQfGLS9XzPTAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] { (Build image)
+[8mha:////4Flt3DMpA1U2U2L6IK/oF2We6G4DA5eFCnK6J3sdvejEAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggysXWsbBkaT4AJIoT5nwCRVJ7Iq3kH0cxYucXOvm3e8wXrGOBIQTOrcDAYO8O8m3RZLFMYro4ys3RhHWEkp5hQWVCvTgsKSgqWVDWsOGwUdo6iQZ1gy628y8ZJ1M05hfIdONSmH+EBFS/mJEP6whxgd5v6SPjz/BXA7BPUbfupvX8DpQJrNb4AAAA=[0m[Pipeline] isUnix
+[8mha:////4LxUonyx2SOwAMdjFmSryEJxXuPCapkAgxt/ZuY/ri6dAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUFSNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPyt/2UMIAAAA=[0m[Pipeline] withEnv
+[8mha:////4GRh5E4BQW8sYtm/f+BSUydgWvvlClBIM1oUCdUDLppLAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAbNWnxXCAAAA[0m[Pipeline] {
+[8mha:////4Ns8m7eVJ6czvqNVgm7TmVozLjOqKkLgghmgpaPqtQEYAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN8W7Eii+AAAA[0m[Pipeline] sh
++ docker build -t metadata_api ./api
+Sending build context to Docker daemon  35.33kB
+Step 1/7 : FROM python:3.10.4
+ ---> e4ccc57bca82
+Step 2/7 : WORKDIR /api
+ ---> Using cache
+ ---> 952dc1cf7470
+Step 3/7 : COPY ./app/ ./app
+ ---> Using cache
+ ---> 9a4773dba27f
+Step 4/7 : COPY ./database ./database
+ ---> Using cache
+ ---> 17e9b99f1695
+Step 5/7 : COPY ./requirements.txt ./
+ ---> Using cache
+ ---> ed97a91b7aa3
+Step 6/7 : RUN pip install --no-cache-dir --upgrade -r ./requirements.txt
+ ---> Running in 36128f75a08a
+Collecting anyio==3.6.1
+  Downloading anyio-3.6.1-py3-none-any.whl (80 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.6/80.6 KB 2.2 MB/s eta 0:00:00
+Collecting attrs==21.4.0
+  Downloading attrs-21.4.0-py2.py3-none-any.whl (60 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.6/60.6 KB 5.0 MB/s eta 0:00:00
+Collecting bcrypt==3.2.0
+  Downloading bcrypt-3.2.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.9/61.9 KB 4.8 MB/s eta 0:00:00
+Collecting blinker==1.4
+  Downloading blinker-1.4.tar.gz (111 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 111.5/111.5 KB 4.8 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting certifi==2020.6.20
+  Downloading certifi-2020.6.20-py2.py3-none-any.whl (156 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 156.6/156.6 KB 4.7 MB/s eta 0:00:00
+Collecting cffi==1.15.1
+  Downloading cffi-1.15.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (441 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 441.8/441.8 KB 3.3 MB/s eta 0:00:00
+Collecting chardet==4.0.0
+  Downloading chardet-4.0.0-py2.py3-none-any.whl (178 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 178.7/178.7 KB 4.7 MB/s eta 0:00:00
+Collecting charset-normalizer==2.1.0
+  Downloading charset_normalizer-2.1.0-py3-none-any.whl (39 kB)
+Collecting click==8.0.3
+  Downloading click-8.0.3-py3-none-any.whl (97 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.5/97.5 KB 4.9 MB/s eta 0:00:00
+Collecting colorama==0.4.4
+  Downloading colorama-0.4.4-py2.py3-none-any.whl (16 kB)
+Collecting cryptography==3.4.8
+  Downloading cryptography-3.4.8-cp36-abi3-manylinux_2_24_x86_64.whl (3.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 3.1 MB/s eta 0:00:00
+Collecting distro==1.7.0
+  Downloading distro-1.7.0-py3-none-any.whl (20 kB)
+Collecting fastapi==0.78.0
+  Downloading fastapi-0.78.0-py3-none-any.whl (54 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.6/54.6 KB 3.2 MB/s eta 0:00:00
+Collecting fasteners==0.14.1
+  Downloading fasteners-0.14.1-py2.py3-none-any.whl (20 kB)
+Collecting future==0.18.2
+  Downloading future-0.18.2.tar.gz (829 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 829.2/829.2 KB 3.2 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting greenlet==1.1.2
+  Downloading greenlet-1.1.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (155 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 155.4/155.4 KB 2.7 MB/s eta 0:00:00
+Collecting h11==0.13.0
+  Downloading h11-0.13.0-py3-none-any.whl (58 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.2/58.2 KB 2.0 MB/s eta 0:00:00
+Collecting httplib2==0.20.2
+  Downloading httplib2-0.20.2-py3-none-any.whl (96 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.7/96.7 KB 3.1 MB/s eta 0:00:00
+Collecting idna==2.10
+  Downloading idna-2.10-py2.py3-none-any.whl (58 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.8/58.8 KB 2.9 MB/s eta 0:00:00
+Collecting importlib-metadata==4.6.4
+  Downloading importlib_metadata-4.6.4-py3-none-any.whl (17 kB)
+Collecting iniconfig==1.1.1
+  Downloading iniconfig-1.1.1-py2.py3-none-any.whl (5.0 kB)
+Collecting jeepney==0.7.1
+  Downloading jeepney-0.7.1-py3-none-any.whl (54 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.1/54.1 KB 3.2 MB/s eta 0:00:00
+Collecting keyring==23.5.0
+  Downloading keyring-23.5.0-py3-none-any.whl (33 kB)
+Collecting launchpadlib==1.10.16
+  Downloading launchpadlib-1.10.16-py2.py3-none-any.whl (216 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 216.5/216.5 KB 2.9 MB/s eta 0:00:00
+Collecting lazr.restfulclient==0.14.4
+  Downloading lazr.restfulclient-0.14.4.tar.gz (62 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.2/62.2 KB 1.9 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting lazr.uri==1.0.6
+  Downloading lazr.uri-1.0.6.tar.gz (18 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting lockfile==0.12.2
+  Downloading lockfile-0.12.2-py2.py3-none-any.whl (13 kB)
+Collecting macaroonbakery==1.3.1
+  Downloading macaroonbakery-1.3.1.tar.gz (79 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.5/79.5 KB 3.1 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting Mako==1.1.3
+  Downloading Mako-1.1.3-py2.py3-none-any.whl (75 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 75.5/75.5 KB 5.0 MB/s eta 0:00:00
+Collecting MarkupSafe==2.0.1
+  Downloading MarkupSafe-2.0.1-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (30 kB)
+Collecting monotonic==1.6
+  Downloading monotonic-1.6-py2.py3-none-any.whl (8.2 kB)
+Collecting more-itertools==8.10.0
+  Downloading more_itertools-8.10.0-py3-none-any.whl (51 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 51.5/51.5 KB 5.3 MB/s eta 0:00:00
+Collecting netifaces==0.11.0
+  Downloading netifaces-0.11.0.tar.gz (30 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting oauthlib==3.2.0
+  Downloading oauthlib-3.2.0-py3-none-any.whl (151 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 151.5/151.5 KB 4.7 MB/s eta 0:00:00
+Collecting packaging==21.3
+  Downloading packaging-21.3-py3-none-any.whl (40 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.8/40.8 KB 5.3 MB/s eta 0:00:00
+Collecting paramiko==2.9.3
+  Downloading paramiko-2.9.3-py2.py3-none-any.whl (210 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 210.5/210.5 KB 4.7 MB/s eta 0:00:00
+Collecting pexpect==4.8.0
+  Downloading pexpect-4.8.0-py2.py3-none-any.whl (59 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.0/59.0 KB 2.6 MB/s eta 0:00:00
+Collecting pluggy==1.0.0
+  Downloading pluggy-1.0.0-py2.py3-none-any.whl (13 kB)
+Collecting protobuf==3.12.4
+  Downloading protobuf-3.12.4-py2.py3-none-any.whl (443 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 443.7/443.7 KB 4.6 MB/s eta 0:00:00
+Collecting ptyprocess==0.7.0
+  Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Collecting py==1.11.0
+  Downloading py-1.11.0-py2.py3-none-any.whl (98 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.7/98.7 KB 4.9 MB/s eta 0:00:00
+Collecting pycparser==2.21
+  Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.7/118.7 KB 4.4 MB/s eta 0:00:00
+Collecting pydantic==1.9.1
+  Downloading pydantic-1.9.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 3.7 MB/s eta 0:00:00
+Collecting PyJWT==2.3.0
+  Downloading PyJWT-2.3.0-py3-none-any.whl (16 kB)
+Collecting pymacaroons==0.13.0
+  Downloading pymacaroons-0.13.0-py2.py3-none-any.whl (19 kB)
+Collecting PyMySQL==1.0.2
+  Downloading PyMySQL-1.0.2-py3-none-any.whl (43 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.8/43.8 KB 5.2 MB/s eta 0:00:00
+Collecting PyNaCl==1.5.0
+  Downloading PyNaCl-1.5.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (856 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 856.7/856.7 KB 4.5 MB/s eta 0:00:00
+Collecting pyparsing==2.4.7
+  Downloading pyparsing-2.4.7-py2.py3-none-any.whl (67 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.8/67.8 KB 4.9 MB/s eta 0:00:00
+Collecting pyRFC3339==1.1
+  Downloading pyRFC3339-1.1-py2.py3-none-any.whl (5.7 kB)
+Collecting pytest==7.1.2
+  Downloading pytest-7.1.2-py3-none-any.whl (297 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 297.0/297.0 KB 4.6 MB/s eta 0:00:00
+Collecting python-dateutil==2.8.1
+  Downloading python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 227.2/227.2 KB 4.7 MB/s eta 0:00:00
+Collecting python-decouple==3.6
+  Downloading python_decouple-3.6-py3-none-any.whl (9.9 kB)
+Collecting pytz==2022.1
+  Downloading pytz-2022.1-py2.py3-none-any.whl (503 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 503.5/503.5 KB 4.6 MB/s eta 0:00:00
+Collecting pyxdg==0.27
+  Downloading pyxdg-0.27-py2.py3-none-any.whl (49 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.5/49.5 KB 4.8 MB/s eta 0:00:00
+Collecting PyYAML==5.4.1
+  Downloading PyYAML-5.4.1.tar.gz (175 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 175.1/175.1 KB 4.7 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting requests==2.25.1
+  Downloading requests-2.25.1-py2.py3-none-any.whl (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 KB 5.0 MB/s eta 0:00:00
+Collecting SecretStorage==3.3.1
+  Downloading SecretStorage-3.3.1-py3-none-any.whl (15 kB)
+Collecting six==1.16.0
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting sniffio==1.2.0
+  Downloading sniffio-1.2.0-py3-none-any.whl (10 kB)
+Collecting SQLAlchemy==1.4.39
+  Downloading SQLAlchemy-1.4.39-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 4.5 MB/s eta 0:00:00
+Collecting starlette==0.19.1
+  Downloading starlette-0.19.1-py3-none-any.whl (63 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.3/63.3 KB 4.9 MB/s eta 0:00:00
+Collecting tomli==2.0.1
+  Downloading tomli-2.0.1-py3-none-any.whl (12 kB)
+Collecting typing_extensions==4.3.0
+  Downloading typing_extensions-4.3.0-py3-none-any.whl (25 kB)
+Collecting urllib3==1.26.5
+  Downloading urllib3-1.26.5-py2.py3-none-any.whl (138 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 138.1/138.1 KB 4.8 MB/s eta 0:00:00
+Collecting uvicorn==0.18.2
+  Downloading uvicorn-0.18.2-py3-none-any.whl (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.0/57.0 KB 5.1 MB/s eta 0:00:00
+Collecting wadllib==1.3.6
+  Downloading wadllib-1.3.6.tar.gz (62 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.2/62.2 KB 5.2 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting xdg==5.0.0
+  Downloading xdg-5.0.0-py3-none-any.whl (4.5 kB)
+Collecting zipp==1.0.0
+  Downloading zipp-1.0.0-py2.py3-none-any.whl (4.1 kB)
+Requirement already satisfied: setuptools in /usr/local/lib/python3.10/site-packages (from lazr.restfulclient==0.14.4->-r ./requirements.txt (line 25)) (58.1.0)
+Building wheels for collected packages: blinker, future, lazr.restfulclient, lazr.uri, macaroonbakery, netifaces, PyYAML, wadllib
+  Building wheel for blinker (setup.py): started
+  Building wheel for blinker (setup.py): finished with status 'done'
+  Created wheel for blinker: filename=blinker-1.4-py3-none-any.whl size=13478 sha256=248fa4c752920f78058ef11f979125695aaeb2441f53fb350041583a00e8a23b
+  Stored in directory: /tmp/pip-ephem-wheel-cache-_t7vcu6l/wheels/46/d1/36/f5bd574e4181b8e1ca3e12dd8d243aa9218725603566fd3c1d
+  Building wheel for future (setup.py): started
+  Building wheel for future (setup.py): finished with status 'done'
+  Created wheel for future: filename=future-0.18.2-py3-none-any.whl size=491070 sha256=bb1713ff41c61caea3985dcec92253474a37f71c5431318dffc69daedd57b2b6
+  Stored in directory: /tmp/pip-ephem-wheel-cache-_t7vcu6l/wheels/22/73/06/557dc4f4ef68179b9d763930d6eec26b88ed7c389b19588a1c
+  Building wheel for lazr.restfulclient (setup.py): started
+  Building wheel for lazr.restfulclient (setup.py): finished with status 'done'
+  Created wheel for lazr.restfulclient: filename=lazr.restfulclient-0.14.4-py3-none-any.whl size=70811 sha256=4b7bf84a93e25d2ee6be636e02b925f4e7dc759be056deb15aade90fe7fa1e2a
+  Stored in directory: /tmp/pip-ephem-wheel-cache-_t7vcu6l/wheels/bb/9c/51/fcd209a75c812670370bd6013e0746b947f4baa0242c342029
+  Building wheel for lazr.uri (setup.py): started
+  Building wheel for lazr.uri (setup.py): finished with status 'done'
+  Created wheel for lazr.uri: filename=lazr.uri-1.0.6-py3-none-any.whl size=20378 sha256=17ae01206303429529f35df11c591f92d8012bce771e3e3df4f57dea6290d571
+  Stored in directory: /tmp/pip-ephem-wheel-cache-_t7vcu6l/wheels/cb/27/9a/232fcb7a33bce3386e70db9f87f9cbe67d4dded43faff30129
+  Building wheel for macaroonbakery (setup.py): started
+  Building wheel for macaroonbakery (setup.py): finished with status 'done'
+  Created wheel for macaroonbakery: filename=macaroonbakery-1.3.1-py2.py3-none-any.whl size=103440 sha256=bafcbbf62acc672e9c2252dd7817a98ec0ca58d22bebe9916db2f7ce964f0d36
+  Stored in directory: /tmp/pip-ephem-wheel-cache-_t7vcu6l/wheels/03/10/e1/a423083040bf37cc21ef32e1ad18c1ec6165d0b5691f7365b5
+  Building wheel for netifaces (setup.py): started
+  Building wheel for netifaces (setup.py): finished with status 'done'
+  Created wheel for netifaces: filename=netifaces-0.11.0-cp310-cp310-linux_x86_64.whl size=34405 sha256=18a1f09cd9a9a5d0362883dd84465c98cd7c99052e92548578e5e39efe3b0c59
+  Stored in directory: /tmp/pip-ephem-wheel-cache-_t7vcu6l/wheels/48/65/b3/4c4cc6038b81ff21cc9df69f2b6774f5f52e23d3c275ed15aa
+  Building wheel for PyYAML (pyproject.toml): started
+  Building wheel for PyYAML (pyproject.toml): finished with status 'done'
+  Created wheel for PyYAML: filename=PyYAML-5.4.1-cp310-cp310-linux_x86_64.whl size=562066 sha256=ca4a1461270e14ff1799740aff067914e9844506451ebcebde29fe5310e810a8
+  Stored in directory: /tmp/pip-ephem-wheel-cache-_t7vcu6l/wheels/c7/0d/22/696ee92245ad710f506eee79bb05c740d8abccd3ecdb778683
+  Building wheel for wadllib (setup.py): started
+  Building wheel for wadllib (setup.py): finished with status 'done'
+  Created wheel for wadllib: filename=wadllib-1.3.6-py3-none-any.whl size=58298 sha256=853f885c46825c938d0cb67ac16fefa2ba17404d5cc116ff315bd806621441bf
+  Stored in directory: /tmp/pip-ephem-wheel-cache-_t7vcu6l/wheels/70/14/54/863a40409358975621e53fee1fe000478845aff98c1a9b8e4f
+Successfully built blinker future lazr.restfulclient lazr.uri macaroonbakery netifaces PyYAML wadllib
+Installing collected packages: pyxdg, pytz, python-decouple, ptyprocess, netifaces, monotonic, lockfile, iniconfig, certifi, blinker, xdg, urllib3, typing_extensions, tomli, sniffio, six, PyYAML, pyRFC3339, pyparsing, PyMySQL, PyJWT, pycparser, py, pluggy, pexpect, oauthlib, more-itertools, MarkupSafe, lazr.uri, jeepney, idna, h11, greenlet, future, distro, colorama, click, charset-normalizer, chardet, attrs, zipp, wadllib, uvicorn, SQLAlchemy, requests, python-dateutil, pydantic, protobuf, packaging, Mako, httplib2, fasteners, cffi, anyio, starlette, pytest, PyNaCl, lazr.restfulclient, importlib-metadata, cryptography, bcrypt, SecretStorage, pymacaroons, paramiko, fastapi, macaroonbakery, keyring, launchpadlib
+Successfully installed Mako-1.1.3 MarkupSafe-2.0.1 PyJWT-2.3.0 PyMySQL-1.0.2 PyNaCl-1.5.0 PyYAML-5.4.1 SQLAlchemy-1.4.39 SecretStorage-3.3.1 anyio-3.6.1 attrs-21.4.0 bcrypt-3.2.0 blinker-1.4 certifi-2020.6.20 cffi-1.15.1 chardet-4.0.0 charset-normalizer-2.1.0 click-8.0.3 colorama-0.4.4 cryptography-3.4.8 distro-1.7.0 fastapi-0.78.0 fasteners-0.14.1 future-0.18.2 greenlet-1.1.2 h11-0.13.0 httplib2-0.20.2 idna-2.10 importlib-metadata-4.6.4 iniconfig-1.1.1 jeepney-0.7.1 keyring-23.5.0 launchpadlib-1.10.16 lazr.restfulclient-0.14.4 lazr.uri-1.0.6 lockfile-0.12.2 macaroonbakery-1.3.1 monotonic-1.6 more-itertools-8.10.0 netifaces-0.11.0 oauthlib-3.2.0 packaging-21.3 paramiko-2.9.3 pexpect-4.8.0 pluggy-1.0.0 protobuf-3.12.4 ptyprocess-0.7.0 py-1.11.0 pyRFC3339-1.1 pycparser-2.21 pydantic-1.9.1 pymacaroons-0.13.0 pyparsing-2.4.7 pytest-7.1.2 python-dateutil-2.8.1 python-decouple-3.6 pytz-2022.1 pyxdg-0.27 requests-2.25.1 six-1.16.0 sniffio-1.2.0 starlette-0.19.1 tomli-2.0.1 typing_extensions-4.3.0 urllib3-1.26.5 uvicorn-0.18.2 wadllib-1.3.6 xdg-5.0.0 zipp-1.0.0
+[91mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[0m[91mWARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the '/usr/local/bin/python -m pip install --upgrade pip' command.
+[0mRemoving intermediate container 36128f75a08a
+ ---> 7c10b1003e57
+Step 7/7 : CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80", "--root-path", "/api/v1/"]
+ ---> Running in ef25a290b2cc
+Removing intermediate container ef25a290b2cc
+ ---> b197bacf17b3
+Successfully built b197bacf17b3
+Successfully tagged metadata_api:latest
+[8mha:////4GvQZ+gCt0Lt6R3g3hDPsgjPxFf12R81OoYVdGn5rXnyAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJESDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQG9gN7HvgAAAA==[0m[Pipeline] }
+[8mha:////4NAY60NipFdrf2cCFQ81+vzR7GNWQIjf1v+9snHa32m3AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiREGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQG7xuaSvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4KLkxvqNFgByAKmOX4gYY7eISYLVZJVemya6m5HFPX3CAAAApB+LCAAAAAAAAP9tjbEOwiAURV9rHFwd/QiabibGyZWw+AXYIkLJexSodPKL/DX/QbSJk3e4uecu5/mCdQxwpKCZVTgYjJ1h3k26LJYpDFdHmVm6sI4wklNMqCyoV6cFBSUFS6oaVhw2CjtH0aBOsOVW3mXjJOrmnEL5Dhxq04/wgIoXc5IhfWEOsLtNfST8ef4KYPY+Qd3uP9W+AUIVvo2+AAAA[0m[Pipeline] }
+[8mha:////4KP42uOtzZdsfpNSqRSxh9+J+LwNvkl2UoGf938z/cIXAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICJUJUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFkKHf7T23fcfblMb4AAAA=[0m[Pipeline] // stage
+[8mha:////4HY0RI0lVpBveMlJhoO2ljzVaTonmfdZPu2a2jjs7XHWAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYSDEB2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INK/7CYMEAAAA=[0m[Pipeline] stage
+[8mha:////4GwS2FyOeTIYV/HoyEToRoik27ui3hjiJEZ9luglwETdAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUWBFT1ygLJwhNCGmj/8tPSjtxIq7GHWipxIQHy7ZkvdcbishwInaisdh6jLUXXejdlMRA3F4DDaKhi6gJIwUrlB0UGVstVVGysCjLYSVhbbEOFD26BBvZ6Icug0ZXnhNP21FC7s0dnpDJiZw0p28ZGba33kTCH+cvAMYuQX7Yzbafn8UHbGnGmsIAAAA=[0m[Pipeline] { (Test image)
+[8mha:////4P29x/vrVZjBnUOz16jPLH5QVC2Cl83nkVRiUoGFQaZJAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi0iIqWisNLzCJMXasO8d2cCpexNf4A4FIVGyx2tlmni9YxwBHDhqtot5QbA16N+p5YebQXx1ntHzBlimyU9io3HCnTgs2nBQsKUpYCdgoah1HQzrBVlh5l5WTpKtzCvN3EFCaboAHFGI2JxnSF6YAu9vYRaaf568AJp+grPefqv0bH7uiub4AAAA=[0m[Pipeline] isUnix
+[8mha:////4K3lKiCJdFTsv3J9KEoBayHb79OjZOyKf4mF7c/SEKkJAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfL9brbD/Cw+pxeAFsIAAAA=[0m[Pipeline] withEnv
+[8mha:////4ORUuJfzRx3w/qouOJUQLB0v0UzltOBaMV6kh/RcdXQEAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAd6e6VPCAAAA[0m[Pipeline] {
+[8mha:////4CRzXc93+4FuG+201Rr04Lir9qnAxX0rVDxkkFIfp8lSAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIagQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN38C26S+AAAA[0m[Pipeline] sh
++ docker inspect -f . metadata_api
+.
+[8mha:////4Jhp+3sAVxkFFMcyFPaVRempDH6D/x6PldwQPJMsmtV+AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIUSDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQHjyRvdvgAAAA==[0m[Pipeline] }
+[8mha:////4HfLXVqHkXMg/HVdxVQgTW2QVgKK1/nskJMJhRIdOgVpAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQUGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQHljyOIvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4LlNNGJKI75nJt0wLtoW11HDVonJnKGZYSKUhl6hoveiAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUMCEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8v5vtMD+LD2TnR3zCAAAA[0m[Pipeline] withDockerContainer
+Jenkins does not seem to be running inside a container
+$ docker run -t -d -u 1000:1000 -w /var/jenkins_home/workspace/EBML-Metadata-API@2 -v /var/jenkins_home/workspace/EBML-Metadata-API@2:/var/jenkins_home/workspace/EBML-Metadata-API@2:rw,z -v /var/jenkins_home/workspace/EBML-Metadata-API@2@tmp:/var/jenkins_home/workspace/EBML-Metadata-API@2@tmp:rw,z -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** metadata_api cat
+$ docker top 30f38b1a18602de45aec7955119f873a992c90baa26f7e64e5f7cfc79cf399c4 -eo pid,comm
+[8mha:////4L+xG4n5dY3b079QReJGKn0W6DxLYVd4zCBhNmr21yq5AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgIhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0QKVszCAAAA[0m[Pipeline] {
+[8mha:////4J+kQrJG0hVJTE91O8D/3YZ4No6LCXEH8A51HmhK2oEZAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCoEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AHN/bm5vgAAAA==[0m[Pipeline] sh
+Sending interrupt signal to process
+Aborted by [8mha:////4AUZGAdEcswgGtQIG6ubSAGhMCP8SZAB5svQPxo6tnLNAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/dLi1CL91NykHACZCOS6vwAAAA==[0membl
+[8mha:////4FCyrM6RW7NqJTABgFgpksPmZ8KhJM3pQpNP+DgaDIWIAAAA/h+LCAAAAAAAAP9djD1Ow0AQRseOoEaUiI46s0EQkIJS8CclkgORwgUWZ1mvvewsu+MkNByCa0CDxBU4BBego6agwcgVfM33mveeP2EtBjijoLFUrjIu5ga9rXVDuKRQ3VhaYqy9p8AYWfmIxvmacXo5uxrdexWscdUFsdp477x+HX5/pJBk0KmDZdjMSrmQwkqnxYyDcfpoFWC7qOeRHObkIlmFfyoHw6eX4aN/SyEdw7pVTnPR5u7gAZJG3/qnn7b/K0O7JAVY+QaQIdlh2CuY/UAIS7m0BUUe7O/2eqKka3F+Msm6E8VyLll2j6dj0e8LVuH2B6GPVPQaAQAA[0mClick here to forcibly terminate running steps
+After 20s process did not stop
+[8mha:////4ApC+aXBtbIA7KUerg7unU6luR3eZbWXmbgljOOb8Uz+AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AFSjtgYvgAAAA==[0m[Pipeline] }
+$ docker stop --time=1 30f38b1a18602de45aec7955119f873a992c90baa26f7e64e5f7cfc79cf399c4
+$ docker rm -f 30f38b1a18602de45aec7955119f873a992c90baa26f7e64e5f7cfc79cf399c4
+[8mha:////4IjBkOcJyd8eoi6ZH1zcqTy0Ai5K3e3ArLOmkQtyusjZAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihQYJUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5r3PVhw9qzEvpvgAAAA==[0m[Pipeline] // withDockerContainer
+[8mha:////4KCbe3CPLxT0fYvJPFUZLsLkf9pyaOXXFLsKkEDqzDcBAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiSImo0lppeIGJjXFi3RnbIal4EV/jD1hEomKL1c4283rDOgY4cTDYaxosxc6id6PJCycOw9XxhD1fsGOK7DS2empZ6WbBlpOGJUUJKwEbTZ3jaMkk2IpePmTlJJnqnEL+jgJKq+7whEJkc5IhfWEOsLuNKjL9PH8FMHufoKzrXIf9B2uny1u+AAAA[0m[Pipeline] }
+[8mha:////4AGOp1m01cikSVHut+IzX/TQw/4vM9EW/bL1FT4dMM0CAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCgA6lorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYhQrk/5NptP0WnyTG+AAAA[0m[Pipeline] // stage
+[8mha:////4H8BHqRYl4g+l4lMZCgG20Bv1Hc6o2SmxIHTc0R5Q8+4AAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIUauVY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfIt3tBtvsA/gVtV70AAAA=[0m[Pipeline] }
+[8mha:////4Fdn0zSC37kJ5wR2eRqdYiJV8duVjJz/1y0/W6zJEEOiAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IMJC7GybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FebkXZOUHjeqpjr0AAAA=[0m[Pipeline] // node
+[8mha:////4FzKaEVcWjE2Ms0HGdbRlG6zAoa/oKVPSYQ1Wsxa4g9kAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRoKBAVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Lu9INt+AKvzzsS9AAAA[0m[Pipeline] End of Pipeline
+Finished: ABORTED

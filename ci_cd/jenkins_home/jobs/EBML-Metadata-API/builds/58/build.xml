@@ -1,0 +1,235 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1203.v7b_7023424efe">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>embl</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@593.va_a_fc25d520e9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@1139.veb_9579fca_33b_">
+      <boundCredentials class="concurrent-hash-map"/>
+    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
+    <hudson.plugins.git.util.BuildData plugin="git@4.11.3">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/main</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.11.0">
+              <sha1>b2ca15efc3193e870d4f95324a68a2bf522ecdd2</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/main</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>58</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>origin/main</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.11.0">
+              <sha1>77508ca8170a40640c8e14ec45fd7a807ef30e9e</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/main</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision plugin="git-client@3.11.0">
+              <sha1 reference="../../marked/sha1"/>
+              <branches class="list">
+                <hudson.plugins.git.Branch reference="../../../marked/branches/hudson.plugins.git.Branch"/>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>6</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>refs/remotes/origin/jenkins_config</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.11.0">
+              <sha1>012dc9bfe0fcdddd21c16c7c692c6284990bb898</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/jenkins_config</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision plugin="git-client@3.11.0">
+              <sha1 reference="../../marked/sha1"/>
+              <branches class="list">
+                <hudson.plugins.git.Branch reference="../../../marked/branches/hudson.plugins.git.Branch"/>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>52</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/BMDuke/meta-bio.git/</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@400.v6b_89a_1317c9a_">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/BMDuke/meta-bio.git/</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2746.v0da_83a_332669">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+  </actions>
+  <queueId>16</queueId>
+  <timestamp>1658058333921</timestamp>
+  <startTime>1658058333939</startTime>
+  <result>FAILURE</result>
+  <duration>1420</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>// node {
+
+//     checkout scm
+
+//     stage &apos;Build&apos;
+//     def metadata_api_image = docker.build(&quot;metadata_api&quot;, &quot;./api&quot;)
+
+
+//     stage &apos;Test&apos;
+
+// //     metadata_api_image.inside(&apos;-v ${JENKINS_HOME}/results:/api/results -p 5000:80&apos;) { c -&gt;
+
+// //         sh &apos;pytest -v --junitxml=results/results.xml&apos;
+
+// //     }    
+    
+//     sh &apos;docker run -p 1234:80 metadata_api_image pytest&apos;
+    
+// //     sh &apos;cat results/results.xml&apos;
+
+//     stage &apos;Deploy&apos;
+
+    
+
+// }
+
+// }
+
+node {
+    
+    environment {
+        userId = &quot;${env.UID}&quot;;
+        groupId = &quot;${env.GID}&quot;;
+    }
+    
+    def app
+
+    stage(&apos;Clone repository&apos;) {
+        /* Let&apos;s make sure we have the repository cloned to our workspace */
+
+        checkout scm
+    }
+
+    stage(&apos;Build image&apos;) {
+        /* This builds the actual image; synonymous to
+         * docker build on the command line */
+
+        app = docker.build(&quot;metadata_api&quot;, &quot;--build-arg uid=$userId --build-arg gid=$groupId ./api&quot;)
+    }
+
+    stage(&apos;Test image&apos;) {
+        /* Ideally, we would run a test framework against our image.
+         * For this example, we&apos;re using a Volkswagen-type approach ;-) */
+
+        app.inside(&apos;-u 1000:50&apos;) {
+//             sh &apos;echo &quot;Tests passed&quot;&apos;
+            sh &apos;pytest -v --junitxml=results/results.xml&apos;
+            sh &apos;cat results/results.xml&apos;
+        }
+    }
+
+    stage(&apos;Push image&apos;) {
+        /* Finally, we&apos;ll push the image with two tags:
+         * First, the incremental build number from Jenkins
+         * Second, the &apos;latest&apos; tag.
+         * Pushing multiple tags is cheap, as all the layers are reused. */
+//         docker.withRegistry(&apos;https://registry.hub.docker.com&apos;, &apos;docker-hub-credentials&apos;) {
+//             app.push(&quot;${env.BUILD_NUMBER}&quot;)
+//             app.push(&quot;latest&quot;)
+        }
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="concurrent-hash-map">
+      <entry>
+        <string>flowNode</string>
+        <long>316126479</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>47804883</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>625036747</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>13308169</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>141308139</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>16</iota>
+    <head>1:16</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.11.3">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/BMDuke/meta-bio.git/</url>
+            <credentialsId>Github-EMBL-Interview-SSH</credentialsId>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>*/main</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions/>
+      </scm>
+      <node></node>
+      <workspace>/var/jenkins_home/workspace/EBML-Metadata-API</workspace>
+      <changelogFile>/var/jenkins_home/jobs/EBML-Metadata-API/builds/58/changelog18349609209235668014.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

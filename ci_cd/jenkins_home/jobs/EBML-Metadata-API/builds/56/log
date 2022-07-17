@@ -1,0 +1,91 @@
+Started by user [8mha:////4AUZGAdEcswgGtQIG6ubSAGhMCP8SZAB5svQPxo6tnLNAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/dLi1CL91NykHACZCOS6vwAAAA==[0membl
+Obtained ci_cd/Jenkinsfile from git https://github.com/BMDuke/meta-bio.git/
+[8mha:////4C0+H206qsnElhheTDp5YHYI+0D+iOiHM4ymzuLAVNr9AAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4BYNEbfHhAKFcYPnJiyfQ0i3aXtaDGHKMgP/Fnok0jTmAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4MvrZ/vvA7DcSm+mH1o/pEhvtJrVYuHW7a4/qDUODUj3AAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZR/eT83ILSktQifY2k0sycEt3MPE19AHHxbH3KAAAA[0mJenkins in /var/jenkins_home/workspace/EBML-Metadata-API
+[8mha:////4E+uIbftdsB8vX4FCfmLaC090ASQfI+RjdqddSydVN1iAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4E/lsRw+yqlq5XrwlgMstZIJ5dmEywSFPfSrnO57aRvxAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4KIMkEZi9DOM/iw8cTv4+CPbPVnpU+zqnUygZ3ArnAojAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Clone repository)
+[8mha:////4HZK53ryHROzVIVpj+xdvXsX09x/V4XNnnH8xfEFFzc0AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+The recommended git tool is: NONE
+using credential Github-EMBL-Interview-SSH
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/EBML-Metadata-API/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/BMDuke/meta-bio.git/ # timeout=10
+Fetching upstream changes from https://github.com/BMDuke/meta-bio.git/
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_SSH to set credentials SSH private key for EMBL Metadata project for EMBL interview
+ > git fetch --tags --force --progress -- https://github.com/BMDuke/meta-bio.git/ +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision bc057c19201db0f6968562ae73b4c3b160379aea (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f bc057c19201db0f6968562ae73b4c3b160379aea # timeout=10
+Commit message: "Update Jenkinsfile"
+ > git rev-list --no-walk 52ad98380a40546e5ce2f681b3c3ddd75bac7cc3 # timeout=10
+[8mha:////4MbkuphECV0u/syd4vhDwfTmGlMg1dkyQOEiuEuBaukmAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4FBLS80XutmJbA4qpD4LJFxQNaWV7lo6pwan/vknAA/0AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4D2l7/iDTThVIYAK4sW7TYAy4ph3qlF5XIVb2ujIJOThAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] stage
+[8mha:////4IXGLeTT7W4wbyeghCkQHpy8gtWavQLBmXQfGLS9XzPTAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] { (Build image)
+[8mha:////4Flt3DMpA1U2U2L6IK/oF2We6G4DA5eFCnK6J3sdvejEAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggysXWsbBkaT4AJIoT5nwCRVJ7Iq3kH0cxYucXOvm3e8wXrGOBIQTOrcDAYO8O8m3RZLFMYro4ys3RhHWEkp5hQWVCvTgsKSgqWVDWsOGwUdo6iQZ1gy628y8ZJ1M05hfIdONSmH+EBFS/mJEP6whxgd5v6SPjz/BXA7BPUbfupvX8DpQJrNb4AAAA=[0m[Pipeline] isUnix
+[8mha:////4LxUonyx2SOwAMdjFmSryEJxXuPCapkAgxt/ZuY/ri6dAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUFSNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPyt/2UMIAAAA=[0m[Pipeline] withEnv
+[8mha:////4GRh5E4BQW8sYtm/f+BSUydgWvvlClBIM1oUCdUDLppLAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAbNWnxXCAAAA[0m[Pipeline] {
+[8mha:////4Ns8m7eVJ6czvqNVgm7TmVozLjOqKkLgghmgpaPqtQEYAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN8W7Eii+AAAA[0m[Pipeline] sh
++ docker build -t metadata_api ./api
+Sending build context to Docker daemon  35.33kB
+Step 1/7 : FROM python:3.10.4
+ ---> e4ccc57bca82
+Step 2/7 : WORKDIR /api
+ ---> Using cache
+ ---> 952dc1cf7470
+Step 3/7 : COPY ./app/ ./app
+ ---> Using cache
+ ---> 9a4773dba27f
+Step 4/7 : COPY ./database ./database
+ ---> Using cache
+ ---> 17e9b99f1695
+Step 5/7 : COPY ./requirements.txt ./
+ ---> Using cache
+ ---> ed97a91b7aa3
+Step 6/7 : RUN pip install --no-cache-dir --upgrade -r ./requirements.txt
+ ---> Using cache
+ ---> 7c10b1003e57
+Step 7/7 : CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80", "--root-path", "/api/v1/"]
+ ---> Using cache
+ ---> b197bacf17b3
+Successfully built b197bacf17b3
+Successfully tagged metadata_api:latest
+[8mha:////4GvQZ+gCt0Lt6R3g3hDPsgjPxFf12R81OoYVdGn5rXnyAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJESDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQG9gN7HvgAAAA==[0m[Pipeline] }
+[8mha:////4NAY60NipFdrf2cCFQ81+vzR7GNWQIjf1v+9snHa32m3AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiREGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQG7xuaSvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4KLkxvqNFgByAKmOX4gYY7eISYLVZJVemya6m5HFPX3CAAAApB+LCAAAAAAAAP9tjbEOwiAURV9rHFwd/QiabibGyZWw+AXYIkLJexSodPKL/DX/QbSJk3e4uecu5/mCdQxwpKCZVTgYjJ1h3k26LJYpDFdHmVm6sI4wklNMqCyoV6cFBSUFS6oaVhw2CjtH0aBOsOVW3mXjJOrmnEL5Dhxq04/wgIoXc5IhfWEOsLtNfST8ef4KYPY+Qd3uP9W+AUIVvo2+AAAA[0m[Pipeline] }
+[8mha:////4KP42uOtzZdsfpNSqRSxh9+J+LwNvkl2UoGf938z/cIXAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICJUJUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFkKHf7T23fcfblMb4AAAA=[0m[Pipeline] // stage
+[8mha:////4HY0RI0lVpBveMlJhoO2ljzVaTonmfdZPu2a2jjs7XHWAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYSDEB2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INK/7CYMEAAAA=[0m[Pipeline] stage
+[8mha:////4GwS2FyOeTIYV/HoyEToRoik27ui3hjiJEZ9luglwETdAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUWBFT1ygLJwhNCGmj/8tPSjtxIq7GHWipxIQHy7ZkvdcbishwInaisdh6jLUXXejdlMRA3F4DDaKhi6gJIwUrlB0UGVstVVGysCjLYSVhbbEOFD26BBvZ6Icug0ZXnhNP21FC7s0dnpDJiZw0p28ZGba33kTCH+cvAMYuQX7Yzbafn8UHbGnGmsIAAAA=[0m[Pipeline] { (Test image)
+[8mha:////4P29x/vrVZjBnUOz16jPLH5QVC2Cl83nkVRiUoGFQaZJAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi0iIqWisNLzCJMXasO8d2cCpexNf4A4FIVGyx2tlmni9YxwBHDhqtot5QbA16N+p5YebQXx1ntHzBlimyU9io3HCnTgs2nBQsKUpYCdgoah1HQzrBVlh5l5WTpKtzCvN3EFCaboAHFGI2JxnSF6YAu9vYRaaf568AJp+grPefqv0bH7uiub4AAAA=[0m[Pipeline] isUnix
+[8mha:////4K3lKiCJdFTsv3J9KEoBayHb79OjZOyKf4mF7c/SEKkJAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfL9brbD/Cw+pxeAFsIAAAA=[0m[Pipeline] withEnv
+[8mha:////4ORUuJfzRx3w/qouOJUQLB0v0UzltOBaMV6kh/RcdXQEAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAd6e6VPCAAAA[0m[Pipeline] {
+[8mha:////4CRzXc93+4FuG+201Rr04Lir9qnAxX0rVDxkkFIfp8lSAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIagQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN38C26S+AAAA[0m[Pipeline] sh
++ docker inspect -f . metadata_api
+.
+[8mha:////4Jhp+3sAVxkFFMcyFPaVRempDH6D/x6PldwQPJMsmtV+AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIUSDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQHjyRvdvgAAAA==[0m[Pipeline] }
+[8mha:////4HfLXVqHkXMg/HVdxVQgTW2QVgKK1/nskJMJhRIdOgVpAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQUGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQHljyOIvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4LlNNGJKI75nJt0wLtoW11HDVonJnKGZYSKUhl6hoveiAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUMCEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8v5vtMD+LD2TnR3zCAAAA[0m[Pipeline] withDockerContainer
+Jenkins does not seem to be running inside a container
+$ docker run -t -d -u 1000:1000 -u 1000:50 -w /var/jenkins_home/workspace/EBML-Metadata-API -v /var/jenkins_home/workspace/EBML-Metadata-API:/var/jenkins_home/workspace/EBML-Metadata-API:rw,z -v /var/jenkins_home/workspace/EBML-Metadata-API@tmp:/var/jenkins_home/workspace/EBML-Metadata-API@tmp:rw,z -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** metadata_api cat
+$ docker top aa11fb4c738576efaeac64de9b260a3efa99e0a7a92ebb04c306203f859cc51c -eo pid,comm
+[8mha:////4L+xG4n5dY3b079QReJGKn0W6DxLYVd4zCBhNmr21yq5AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgIhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0QKVszCAAAA[0m[Pipeline] {
+[8mha:////4J+kQrJG0hVJTE91O8D/3YZ4No6LCXEH8A51HmhK2oEZAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCoEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AHN/bm5vgAAAA==[0m[Pipeline] sh
+Sending interrupt signal to process
+Aborted by [8mha:////4AUZGAdEcswgGtQIG6ubSAGhMCP8SZAB5svQPxo6tnLNAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/dLi1CL91NykHACZCOS6vwAAAA==[0membl
+[8mha:////4JjIOfCUzle5xuty5bU1sO7yOJsiIvrErSb824hSvSFrAAAA/h+LCAAAAAAAAP9djD1Ow0AQRseOoEaUiI46s0GBIAWl4E8ikkMihQsszrJee9lZdsckNByCa0CDxBU4BBego6agwcgVfM33mveeP2EtBjiloLFUrjIu5ga9rXVDuKRQXVtaYqy9p8AYWfmIxvmacTadX57fexWscdUFsdp477x+HXx/pJBk0KmDZdjMSnknhZVOizkH4/ThKsB2US8iOczJRbIK/1QGo6eX0aN/SyEdw7pVTnPR5m7hAZJG3/qnn7T/K0O7JAVY+QaQIdlh6BfMfiiEpVzagiIP93Z7PVHSlTg7nmTdiWK5kCy7R7Ox2B8IVuHmBw/9wHIaAQAA[0mClick here to forcibly terminate running steps
+After 20s process did not stop
+[8mha:////4ApC+aXBtbIA7KUerg7unU6luR3eZbWXmbgljOOb8Uz+AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AFSjtgYvgAAAA==[0m[Pipeline] }
+$ docker stop --time=1 aa11fb4c738576efaeac64de9b260a3efa99e0a7a92ebb04c306203f859cc51c
+$ docker rm -f aa11fb4c738576efaeac64de9b260a3efa99e0a7a92ebb04c306203f859cc51c
+[8mha:////4IjBkOcJyd8eoi6ZH1zcqTy0Ai5K3e3ArLOmkQtyusjZAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihQYJUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5r3PVhw9qzEvpvgAAAA==[0m[Pipeline] // withDockerContainer
+[8mha:////4KCbe3CPLxT0fYvJPFUZLsLkf9pyaOXXFLsKkEDqzDcBAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiSImo0lppeIGJjXFi3RnbIal4EV/jD1hEomKL1c4283rDOgY4cTDYaxosxc6id6PJCycOw9XxhD1fsGOK7DS2empZ6WbBlpOGJUUJKwEbTZ3jaMkk2IpePmTlJJnqnEL+jgJKq+7whEJkc5IhfWEOsLuNKjL9PH8FMHufoKzrXIf9B2uny1u+AAAA[0m[Pipeline] }
+[8mha:////4AGOp1m01cikSVHut+IzX/TQw/4vM9EW/bL1FT4dMM0CAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCgA6lorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYhQrk/5NptP0WnyTG+AAAA[0m[Pipeline] // stage
+[8mha:////4H8BHqRYl4g+l4lMZCgG20Bv1Hc6o2SmxIHTc0R5Q8+4AAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIUauVY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfIt3tBtvsA/gVtV70AAAA=[0m[Pipeline] }
+[8mha:////4Fdn0zSC37kJ5wR2eRqdYiJV8duVjJz/1y0/W6zJEEOiAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IMJC7GybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FebkXZOUHjeqpjr0AAAA=[0m[Pipeline] // node
+[8mha:////4FzKaEVcWjE2Ms0HGdbRlG6zAoa/oKVPSYQ1Wsxa4g9kAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRoKBAVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Lu9INt+AKvzzsS9AAAA[0m[Pipeline] End of Pipeline
+Finished: ABORTED

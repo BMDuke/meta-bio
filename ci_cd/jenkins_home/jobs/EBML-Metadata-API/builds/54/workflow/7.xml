@@ -1,0 +1,72 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@833.va_1c71061486b_">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2746.v0da_83a_332669">
+    <parentIds>
+      <string>6</string>
+    </parentIds>
+    <id>7</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.scm.GenericSCMStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2746.v0da_83a_332669">
+      <arguments>
+        <entry>
+          <string>scm</string>
+          <org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable plugin="structs@318.va_f3ccb_729b_71">
+            <arguments class="tree-map">
+              <entry>
+                <string>branches</string>
+                <list>
+                  <org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable>
+                    <arguments class="tree-map">
+                      <entry>
+                        <string>name</string>
+                        <string>*/main</string>
+                      </entry>
+                    </arguments>
+                    <model resolves-to="org.jenkinsci.plugins.structs.describable.DescribableModel$SerializedForm">
+                      <type>hudson.plugins.git.BranchSpec</type>
+                    </model>
+                  </org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable>
+                </list>
+              </entry>
+              <entry>
+                <string>extensions</string>
+                <list/>
+              </entry>
+              <entry>
+                <string>userRemoteConfigs</string>
+                <list>
+                  <org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable>
+                    <arguments class="tree-map">
+                      <entry>
+                        <string>credentialsId</string>
+                        <string>Github-EMBL-Interview-SSH</string>
+                      </entry>
+                      <entry>
+                        <string>url</string>
+                        <string>https://github.com/BMDuke/meta-bio.git/</string>
+                      </entry>
+                    </arguments>
+                    <model resolves-to="org.jenkinsci.plugins.structs.describable.DescribableModel$SerializedForm">
+                      <type>hudson.plugins.git.UserRemoteConfig</type>
+                    </model>
+                  </org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable>
+                </list>
+              </entry>
+            </arguments>
+            <model resolves-to="org.jenkinsci.plugins.structs.describable.DescribableModel$SerializedForm">
+              <type>hudson.plugins.git.GitSCM</type>
+            </model>
+          </org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@1188.v0016b_4f29881">
+      <startTime>1658057233680</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>
