@@ -36,11 +36,17 @@ node {
         /* Ideally, we would run a test framework against our image.
          * For this example, we're using a Volkswagen-type approach ;-) */
 
-        app.inside("-u ${env.JENKINS_USER_ID}:${env.JENKINS_GROUP_ID}") {
-//             sh 'echo "Tests passed"'
-            sh 'pytest -v --junitxml=results/results.xml'
-            sh 'cat results/results.xml'
+        withEnv(["JENKINS_USER_NAME=${sh(script:'id -un', returnStdout: true).trim()}", "JENKINS_USER_ID=${sh(script:'id -u', returnStdout: true).trim()}", "JENKINS_GROUP_ID=${sh(script:'id -g', returnStdout: true).trim()}"]) { 
+             
+            app.inside("-u ${env.JENKINS_USER_ID}:${env.JENKINS_GROUP_ID}") {
+    //             sh 'echo "Tests passed"'
+                sh 'pytest -v --junitxml=results/results.xml'
+                sh 'cat results/results.xml'
+            }            
+            
         }
+        
+
     }
 
     stage('Push image') {
