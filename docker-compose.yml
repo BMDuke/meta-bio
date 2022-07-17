@@ -46,9 +46,6 @@ services:
       - .env      
     depends_on:
       - rabbitmq-server       
-    deploy: 
-      mode: replicated
-      replicas: 3 
 
 
   jenkins-server:
