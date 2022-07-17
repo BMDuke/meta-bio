@@ -28,7 +28,8 @@ node {
 
         withEnv(["JENKINS_USER_NAME=${sh(script:'id -un', returnStdout: true).trim()}", "JENKINS_USER_ID=${sh(script:'id -u', returnStdout: true).trim()}", "JENKINS_GROUP_ID=${sh(script:'id -g', returnStdout: true).trim()}"]) { 
            
-           app.inside("-u ${env.JENKINS_USER_ID}:${env.JENKINS_GROUP_ID}") {c -> 
+//            app.inside("-u ${env.JENKINS_USER_ID}:${env.JENKINS_GROUP_ID}") {c -> 
+           app.inside("-u 0") {c -> 
                sh 'echo "Tests passed"'
                sh 'ls'
                sh 'pwd'
