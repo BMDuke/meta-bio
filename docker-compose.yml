@@ -31,6 +31,7 @@ services:
       - .env  
     depends_on:
       - rabbitmq-server  
+      - metadata_api_v2_consuner
 
   metadata_api_v2_consuner:
     build: ./api_v2/rmq_worker
@@ -44,7 +45,10 @@ services:
     env_file:
       - .env      
     depends_on:
-      - rabbitmq-server        
+      - rabbitmq-server       
+    deploy: 
+      mode: replicated
+      replicas: 3 
 
 
   jenkins-server:
@@ -75,6 +79,7 @@ services:
       - .env    
     depends_on:
       - metadata-api
+      - metadata_api_v2_consuner
       - jenkins-server
       - grafana-log-viz
       - rabbitmq-server
