@@ -30,7 +30,11 @@ node {
            
            app.withRun("-u ${env.JENKINS_USER_ID}:${env.JENKINS_GROUP_ID}") {c -> 
                sh 'echo "Tests passed"'
-               sh 'python3 -m pytest'
+               sh 'ls'
+               sh 'pwd'
+               sh 'cat requirements.txt'
+               sh 'pip freeze'
+               sh 'python -m pytest'
                sh 'pytest -v --junitxml=results/results.xml'
                sh 'cat results/results.xml'
                sh "docker logs ${c.id}"
