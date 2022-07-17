@@ -4,6 +4,7 @@ __pycache__
 
 # Python environment
 */env
+*/.pytest_cache
 
 ## Jenkins
 ci_cd/jenkins-keys
@@ -12,3 +13,7 @@ ci_cd/jenkins_home/caches
 
 ## Logging
 logging/postgresql/pg_data
+
+## RabbitMQ
+queue/rmq_data/.bash_history
+queue/rmq_data/.erlang.cookie

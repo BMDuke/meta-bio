@@ -8,7 +8,6 @@ WORKDIR /api
 COPY ./app/ ./app
 COPY ./database ./database
 COPY ./requirements.txt ./
-COPY ./.env ./.env 
 
 # Set up env vars
 # ENV DB_URL ${SQLALCHEMY_DATABASE_URL}
@@ -17,4 +16,4 @@ COPY ./.env ./.env
 RUN pip install --no-cache-dir --upgrade -r ./requirements.txt
 
 # Run the start commands
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80", "--root-path", "/api"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80", "--root-path", "/api/v1/"]

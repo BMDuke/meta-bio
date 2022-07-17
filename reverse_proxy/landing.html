@@ -6,7 +6,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    
+    * {
+        /* border: 1px solid black; */
+        box-sizing: border-box;        
+    }
+
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        align-items: center;
+        justify-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    h1, h2, h3, h4, h5 {
+       margin: 0 
+    }
+
+    a {
+        text-decoration: None;
+        color: grey;
+    }
+
+    .header {
+        /* grid-column: 1 / 12; */
+        padding: 1rem
+    }
+
+    .header h1,
+    .header h2,
+    .header h4 {
+        color: grey;
+    }
+
+    .container{
+        grid-column: 3 / 10;
+        display: grid;
+        grid-row-gap: 5px;
+        justify-items: center;
+        height: fit-content;  
+        width: 100%;      
+
+    }
+
+    .item {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid grey;
+        border-radius: 5px;
+        /* margin: 5px; */
+        height: fit-content;
+        width: 60%;
+    }
+
+    .item:hover {
+        border: 1px solid black;
+    }
+
+    .item:active {
+        transform: scale(0.98);
+        transition: transform 33ms ease-in-out;
+    }    
+
+    .item > img {
+        max-width: 100px;
+        max-height: 100px;
+        margin: auto;
+        padding-left: 1rem;
+    }
+
+    .item > div {
+        padding: 1rem;
+        width: 70%;
+    }
+
+</style>
 <body>
+
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Ensembl Metadata REST API Challenge</h1>
+            <h2>By Stephen Duke</h2>
+            <br>
+            <h2>Login Credentials:</h2>
+            <h4>User: embl</h4>
+            <h4>password: password</h4>
+        </div>        
+
+        <a class="item" href="/api/v1/docs/" target="_blank">
+            <img src="https://pbs.twimg.com/profile_images/1418179466073870338/rQO0sahs_400x400.jpg">
+            <div>
+                <h2>Metadata API v1</h2>
+                <p>Experiment with the metadata api. This version doesn't use any queues.</p>
+            </div>
+        </a> 
+
+        <a class="item" href="/api/v2/docs/" target="_blank">
+            <img src="https://pbs.twimg.com/profile_images/1418179466073870338/rQO0sahs_400x400.jpg">
+            <div>
+                <h2>Metadata API v2</h2>
+                <p>Experiment with the metadata api. This version uses queues and a message driven architecture. Queues can be explored in the RabbitMQ admin UI.</p>
+            </div>
+        </a> 
+
+        <a class="item" href="/jenkins/" target="_blank">
+            <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/jenkins-1-logo.png">
+            <div>
+                <h2>Jenkins</h2>
+                <p>Run tests, view build pipelines. Explore the automated cicd server through the admin panel</p>
+            </div>
+        </a> 
+
+        <a class="item" href="/grafana/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a1/Grafana_logo.svg/1200px-Grafana_logo.svg.png">
+            <div>
+                <h2>Logging and monitoring</h2>
+                <p>View the logs and metrics collected from the applications.</p>
+            </div>
+        </a> 
+
+        <a class="item" href="/rabbitmq/" target="_blank">
+            <img src="https://herve.beraud.io/images/blog/rabbitmq.png">
+            <div>
+                <h2>RabbitMQ</h2>
+                <p>See how message exchange works from the admin UI.</p>
+            </div>
+        </a> 
+
+     
+
+                
+    </div>
+  
     
 </body>
 </html>
