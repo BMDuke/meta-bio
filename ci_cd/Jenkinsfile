@@ -1,32 +1,15 @@
-// node {
-
-//     checkout scm
-
-//     stage 'Build'
-//     def metadata_api_image = docker.build("metadata_api", "./api")
-
-
-//     stage 'Test'
-
-// //     metadata_api_image.inside('-v ${JENKINS_HOME}/results:/api/results -p 5000:80') { c ->
-
-// //         sh 'pytest -v --junitxml=results/results.xml'
-
-// //     }    
-    
-//     sh 'docker run -p 1234:80 metadata_api_image pytest'
-    
-// //     sh 'cat results/results.xml'
-
-//     stage 'Deploy'
-
-    
-
-// }
-
-// }
+// Useful resources:
+// > https://medium.com/@mccode/understanding-how-uid-and-gid-work-in-docker-containers-c37a01d01cf
+// > https://tutorials.releaseworksacademy.com/learn/building-your-first-docker-image-with-jenkins-2-guide-for-developers
+// > https://stackoverflow.com/questions/62958484/how-to-dynamically-add-jenkins-user-and-permissions-inside-docker-container
 
 node {
+    
+    environment {
+            JENKINS_USER_NAME = "${sh(script:'id -un', returnStdout: true).trim()}"
+            JENKINS_USER_ID = "${sh(script:'id -u', returnStdout: true).trim()}"
+            JENKINS_GROUP_ID = "${sh(script:'id -g', returnStdout: true).trim()}"
+    }    
    
     
     def app
@@ -41,14 +24,14 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("metadata_api", "./api")
+        app = docker.build("metadata_api", "--build-arg UID=${JENKINS_USER_ID} --build-arg GID=${JENKINS_GROUP_ID} --build-arg UNAME=${JENKINS_USER_NAME} ./api")
     }
 
     stage('Test image') {
         /* Ideally, we would run a test framework against our image.
          * For this example, we're using a Volkswagen-type approach ;-) */
 
-        app.inside('-u 1000:50') {
+        app.inside("-u ${JENKINS_USER_ID}:${JENKINS_GROUP_ID}") {
 //             sh 'echo "Tests passed"'
             sh 'pytest -v --junitxml=results/results.xml'
             sh 'cat results/results.xml'
