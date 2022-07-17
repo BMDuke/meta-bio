@@ -6,3 +6,8 @@ And for grafana
 sudo chown -R 472:472 logging/grafana/gf_conf/
 sudo chown -R 472:472 logging/grafana/gf_data/
 
+Known Issues
+> Grafana data base access: Log into postgres and grant user embl_grafana access
+> Grafana log in: chown 472:472 gf_data dir
+> Jenkins 503: Restart container
+> api_v2 503: Ensure rabbitmq server is up and running, then restart container
