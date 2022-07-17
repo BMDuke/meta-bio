@@ -1,8 +1,8 @@
+import os
+
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
-
-from decouple import config
 
 '''
 This file instantiates a connection with the database server used in
@@ -13,7 +13,7 @@ in this projects root directory.
 '''
 
 # Read in the URL from the .env file
-SQLALCHEMY_DATABASE_URL = config('SQLALCHEMY_DATABASE_URL')
+SQLALCHEMY_DATABASE_URL = os.environ.get('SQLALCHEMY_DATABASE_URL')
 
 # Create the sqlalchemy engine
 engine = create_engine(

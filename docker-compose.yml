@@ -10,6 +10,36 @@ services:
     restart: unless-stopped
     logging:
       driver: "fluentd"    
+    env_file:
+      - .env         
+  
+  metadata_api_v2_publisher:
+    build: ./api_v2/rmq_client
+    container_name: metadata_api_v2_client
+    ports:
+      - "4500:80"
+      - "4501:5672"
+    restart: unless-stopped
+    logging:
+      driver: "fluentd"    
+    env_file:
+      - .env  
+    depends_on:
+      - rabbitmq-server  
+
+  metadata_api_v2_consuner:
+    build: ./api_v2/rmq_worker
+    container_name: metadata_api_v2_worker
+    ports:
+      - "4600:80"
+      - "4601:5672"
+    restart: unless-stopped
+    logging:
+      driver: "fluentd"    
+    env_file:
+      - .env      
+    depends_on:
+      - rabbitmq-server        
 
 
   jenkins-server:
@@ -36,6 +66,13 @@ services:
     restart: unless-stopped  
     logging:
       driver: "fluentd"     
+    env_file:
+      - .env    
+    depends_on:
+      - metadata-api
+      - jenkins-server
+      - grafana-log-viz
+      - rabbitmq-server
 
   fluentbit-logger:
     build: ./logging/fluentbit
@@ -83,3 +120,14 @@ services:
       - postgres-log-db    
     logging:
       driver: "fluentd"        
+  
+  rabbitmq-server:
+    build: ./queue
+    container_name: rabbitmq
+    hostname: embl-queue
+    ports:
+      - "4400:5672" # AMPQ port
+      - "4401:15672" # Management plugin port
+    volumes:
+      - "./queue/rmq_data:/var/lib/rabbitmq"      
+    restart: unless-stopped    
