@@ -35,7 +35,7 @@ node {
 // //                 sh 'cat results/results.xml'
 //             }   
            
-           docker.image(app).withRun("-u ${env.JENKINS_USER_ID}:${env.JENKINS_GROUP_ID}") {c -> 
+           app.withRun("-u ${env.JENKINS_USER_ID}:${env.JENKINS_GROUP_ID}") {c -> 
                sh 'echo "Tests passed"'
                sh 'pytest'
                sh 'pytest -v --junitxml=results/results.xml'
