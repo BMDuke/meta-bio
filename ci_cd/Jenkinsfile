@@ -4,17 +4,7 @@
 // > https://stackoverflow.com/questions/62958484/how-to-dynamically-add-jenkins-user-and-permissions-inside-docker-container
 
 node {
-    
-    environment {
-//             JENKINS_USER_NAME = "${sh(script:'id -un', returnStdout: true).trim()}"
-//             JENKINS_USER_ID = "${sh(script:'id -u', returnStdout: true).trim()}"
-//             JENKINS_GROUP_ID = "${sh(script:'id -g', returnStdout: true).trim()}"
-            JENKINS_USER_NAME = "testing name"
-            JENKINS_USER_ID = "testing id"
-            JENKINS_GROUP_ID = "testing gid"
-    }    
    
-    
     def app
 
     stage('Clone repository') {
@@ -39,9 +29,10 @@ node {
         withEnv(["JENKINS_USER_NAME=${sh(script:'id -un', returnStdout: true).trim()}", "JENKINS_USER_ID=${sh(script:'id -u', returnStdout: true).trim()}", "JENKINS_GROUP_ID=${sh(script:'id -g', returnStdout: true).trim()}"]) { 
              
             app.inside("-u ${env.JENKINS_USER_ID}:${env.JENKINS_GROUP_ID}") {
-    //             sh 'echo "Tests passed"'
-                sh 'pytest -v --junitxml=results/results.xml'
-                sh 'cat results/results.xml'
+                sh 'echo "Tests passed"'
+                sh 'pytest'
+//                 sh 'pytest -v --junitxml=results/results.xml'
+//                 sh 'cat results/results.xml'
             }            
             
         }
