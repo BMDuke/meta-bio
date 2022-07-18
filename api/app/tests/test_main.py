@@ -19,7 +19,7 @@ def test_http_methods():
     '''
     '''
     
-    res_get = client.post('/databases?release=106&offset=0&limit=20')
+    res_get = client.get('/databases?release=106&offset=0&limit=20')
     res_post = client.post('/databases')
     res_put = client.put('/databases')
     res_patch = client.patch('/databases')
