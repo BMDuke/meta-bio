@@ -75,7 +75,23 @@ If you're all set with no problems, check out the usage section.
 The service has a main entry point at [`http://localhost/`](http://localhost/) which provides links to each of the services via a minimal UI.
 
 ### Calling the API 
+To call the regular API. Select the first option from the list of options `Metadata API v1`. 
+![Select api version 1 link](https://github.com/BMDuke/meta-bio/blob/main/static/EMBL-MetaData-API.png?raw=true)
 
+This will take you to the swagger ui. Here, expand the drop down and experiment with the Emsembl metadata API. 
+![Select api version 1 link](https://github.com/BMDuke/meta-bio/blob/main/static/FastAPI-Swagger-UI%20(1).png?raw=true)
+
+Query responses are displayed below.
+![Select api version 1 link](https://github.com/BMDuke/meta-bio/blob/main/static/FastAPI-Swagger-UI%20(2)1.png?raw=true)
+
+### Calling the API using a queue-intermediated backend
+To call the queue serviced backend, we need to select the second version of the API - `Metadata API v2`. At the same time, we can watch the messages pass through the exchange to the worker by openening the rabbitmq app as well. 
+
+![Select api version 1 link](https://github.com/BMDuke/meta-bio/blob/main/static/EMBL-MetaData-API-1.png?raw=true)
+
+In one tab make some requests to the metadata API just like we did in the previous example, then switch to the rabbitMQ tab to see the events. You can find out more information about the process by toggling the tabs. 
+
+![Select api version 1 link](https://github.com/BMDuke/meta-bio/blob/main/static/RabbitMQ-Management.png?raw=true)
 
 ## Contact
 
