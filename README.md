@@ -65,9 +65,13 @@ Now we are ready to build the images.
 sudo docker-compose build
 ```
 
-And finally we can launch the containers.
+And next we can launch the containers.
 ```
 sudo docker-compose up -d
+```
+Finally, let's make sure our API is passing its tests.
+```
+sudo docker exec -it metadata_api bash -c pytest
 ```
 
 ### Next steps
