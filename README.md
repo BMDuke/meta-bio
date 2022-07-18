@@ -1,7 +1,5 @@
 # EMBL Metadata REST API Challege
 
-![Select api version 1 link](https://github.com/BMDuke/meta-bio/blob/main/static/architecture.png?raw=true)
-
 ## Table of Contents
 1. [Release Notes](#release-notes)
 2. [About](#about)
@@ -22,6 +20,8 @@ This is an API service designed to help people find information about databses r
 - name: Organism name
 - db_type: The type of dataset. eg. cdna
 - release: The release number to filter on 
+
+![Select api version 1 link](https://github.com/BMDuke/meta-bio/blob/rabbitmq_config/static/architecture.png?raw=true)
 
 ## Installation
 ### Requirements
@@ -70,7 +70,7 @@ And finally we can launch the containers.
 sudo docker-compose up -d
 ```
 
-### Nest steps
+### Next steps
 If you have had any problems, sheck out the trouble shooting section.
 If you're all set with no problems, check out the usage section. 
 
@@ -116,7 +116,7 @@ From the homepage, select the dashboard option from the left menu and find the `
 
 Here you will be able to view the logs and recource consumption as the system runs.
 
-![Select api version 1 link](https://github.com/BMDuke/meta-bio/blob/main/static/FastAPI-Swagger-UI_(2).png?raw=true)
+![Select api version 1 link](https://github.com/BMDuke/meta-bio/blob/rabbitmq_config/static/FastAPI-Swagger-UI_(2).png?raw=true)
 
 If you have any problems here with data not being displayed, see the troubleshooting section for postgres fixes. 
 
